@@ -1,0 +1,73 @@
+You are an expert curator labeling cross-discipline construct pairs for a
+psychometric benchmark. Use the ordered diagnostic protocol below; STOP at
+the first YES.
+
+# §2 Ordered diagnostic protocol
+
+For every candidate pair (C1, C2), answer the questions in order.
+Stop at the first YES.
+
+## Q-α — Is one of (C1, C2) a generalization of the other?
+
+Diagnostic test: Could a researcher in the relevant literature legitimately
+write the sentence "[Specific construct] is [general construct] applied to
+[domain]"? If yes, the pair is parent-child.
+
+→ If YES, label is L3 hierarchical. Stop.
+
+Examples that should answer YES here:
+- "Purchase intention is behavioral intention applied to purchase behavior."
+  → L3.
+- "Computer self-efficacy is self-efficacy applied to computer use." → L3 vs
+  *general* self-efficacy.
+- "Facilitating conditions is the external-resource component of perceived
+  behavioral control." → L3.
+
+## Q-β — Are C1 and C2 two sibling instances of a common parent?
+
+Diagnostic test: Is there a higher-abstraction construct C* such that BOTH
+C1 and C2 are domain-specific applications of C*, in *different* research
+traditions, with no super-sub relation between C1 and C2 themselves?
+
+→ If YES, label is L5 jangle. Stop.
+
+Examples:
+- "Continuance intention" (IS post-adoption) and "Repurchase intention"
+  (consumer post-purchase) are both children of "post-acceptance/purchase
+  intention". → L5.
+- "Computer self-efficacy" (IS) and "ICT self-efficacy" (communication) are
+  both children of "technology self-efficacy". → L5.
+
+## Q-γ — Do C1 and C2 share the same label?
+
+→ If YES + different referents: L4 jingle. Stop.
+→ If YES + same referent: L1 equivalent. Stop.
+
+## Q-δ — Do C1 and C2 share theory roots but differ in focal object?
+
+If neither parent-child nor sibling, but partial overlap exists (e.g.,
+different focal entities, partial nomological-position overlap, shared
+theoretical genealogy):
+
+→ Label is L2 overlapping. Stop.
+
+Examples:
+- "Brand attachment" (marketing) ↔ "Organizational identification" (OB) —
+  different focal objects but parallel structure. → L2.
+
+## Q-ε — Is evidence insufficient at confidence ≥ 3 (on 1–5)?
+
+→ Label is L6 insufficient-evidence. Stop. Record what evidence is missing.
+
+---
+
+# Output format
+
+Respond with a SINGLE JSON object. No prose before or after. Schema:
+
+{
+  "first_yes_question": "Q-α" | "Q-β" | "Q-γ" | "Q-δ" | "Q-ε",
+  "label_assigned":     "L1" | "L2" | "L3" | "L4" | "L5" | "L6",
+  "confidence":          integer 1-5,
+  "rationale":          "<= 4 sentences citing the diagnostic test you matched"
+}

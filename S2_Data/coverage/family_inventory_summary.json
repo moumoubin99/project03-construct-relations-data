@@ -1,0 +1,46 @@
+{
+  "version": "http://humanbehaviourchange.org/ontology/MechanismOfAction/bcio_moa.owl/2026-09-11",
+  "roots": {
+    "自我效能": {
+      "defined_published_nodes": 10,
+      "direct_edges": 9,
+      "root_id": "http://humanbehaviourchange.org/ontology/BCIO_050898"
+    },
+    "行为动机": {
+      "defined_published_nodes": 19,
+      "direct_edges": 18,
+      "root_id": "http://humanbehaviourchange.org/ontology/BCIO_006133"
+    },
+    "目标": {
+      "defined_published_nodes": 15,
+      "direct_edges": 14,
+      "root_id": "http://humanbehaviourchange.org/ontology/BCIO_006049"
+    },
+    "感知规范": {
+      "defined_published_nodes": 6,
+      "direct_edges": 5,
+      "root_id": "http://humanbehaviourchange.org/ontology/BCIO_006039"
+    },
+    "行为意向": {
+      "defined_published_nodes": 4,
+      "direct_edges": 3,
+      "root_id": "http://humanbehaviourchange.org/ontology/BCIO_006016"
+    },
+    "态度": {
+      "defined_published_nodes": 14,
+      "direct_edges": 15,
+      "root_id": "http://humanbehaviourchange.org/ontology/BCIO_050328"
+    },
+    "结果信念": {
+      "defined_published_nodes": 30,
+      "direct_edges": 29,
+      "root_id": "http://humanbehaviourchange.org/ontology/BCIO_050217"
+    }
+  },
+  "distinct_direct_edges": 93,
+  "distinct_endpoint_nodes": 98,
+  "edges_whose_child_definition_names_parent": 85,
+  "explicit_named_disjointWith_pairs_in_selected_nodes": [],
+  "negative_sampling": "Not performed; missing edges are unknown, not negatives.",
+  "scope": "Defined Published native BCIO classes in seven topical subtrees; root choice is an analyst scope choice, not randomized sampling."
+}

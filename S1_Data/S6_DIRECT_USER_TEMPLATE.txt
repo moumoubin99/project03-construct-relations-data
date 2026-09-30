@@ -1,0 +1,13 @@
+Construct A:
+  label:       {label_1}
+  discipline:  {disc_1}
+  definition:  {def_1}
+  items:       {items_1}
+
+Construct B:
+  label:       {label_2}
+  discipline:  {disc_2}
+  definition:  {def_2}
+  items:       {items_2}
+
+Return the JSON object specified in the system message.

@@ -1,0 +1,22 @@
+﻿system,category,n_records,n_native_label_calls,n_native_L4,native_call_L4_rate,n_usable_native_or_derived_labels,n_native_or_derived_L4,native_or_derived_L4_rate,label_origin
+S2_wulff_mata,ALL,96,0,0,,96,7,0.07291666666666667,offline calibrated scalar scores; raw file has no emitted labels
+S2_wulff_mata,A,5,0,0,,5,1,0.2,offline calibrated scalar scores; raw file has no emitted labels
+S2_wulff_mata,A_prime,14,0,0,,14,0,0.0,offline calibrated scalar scores; raw file has no emitted labels
+S2_wulff_mata,B,20,0,0,,20,0,0.0,offline calibrated scalar scores; raw file has no emitted labels
+S2_wulff_mata,C,36,0,0,,36,0,0.0,offline calibrated scalar scores; raw file has no emitted labels
+S2_wulff_mata,D,21,0,0,,21,6,0.2857142857142857,offline calibrated scalar scores; raw file has no emitted labels
+S2_wulff_mata,NONCONTROLS,75,0,0,,75,1,0.013333333333333334,offline calibrated scalar scores; raw file has no emitted labels
+S5_generic_embed,ALL,96,0,0,,96,8,0.08333333333333333,offline calibrated scalar scores; raw file has no emitted labels
+S5_generic_embed,A,5,0,0,,5,1,0.2,offline calibrated scalar scores; raw file has no emitted labels
+S5_generic_embed,A_prime,14,0,0,,14,0,0.0,offline calibrated scalar scores; raw file has no emitted labels
+S5_generic_embed,B,20,0,0,,20,1,0.05,offline calibrated scalar scores; raw file has no emitted labels
+S5_generic_embed,C,36,0,0,,36,0,0.0,offline calibrated scalar scores; raw file has no emitted labels
+S5_generic_embed,D,21,0,0,,21,6,0.2857142857142857,offline calibrated scalar scores; raw file has no emitted labels
+S5_generic_embed,NONCONTROLS,75,0,0,,75,2,0.02666666666666667,offline calibrated scalar scores; raw file has no emitted labels
+S6_llm_direct,ALL,288,288,52,0.18055555555555555,288,52,0.18055555555555555,native LLM labels
+S6_llm_direct,A,15,15,4,0.26666666666666666,15,4,0.26666666666666666,native LLM labels
+S6_llm_direct,A_prime,42,42,0,0.0,42,0,0.0,native LLM labels
+S6_llm_direct,B,60,60,36,0.6,60,36,0.6,native LLM labels
+S6_llm_direct,C,108,108,12,0.1111111111111111,108,12,0.1111111111111111,native LLM labels
+S6_llm_direct,D,63,63,0,0.0,63,0,0.0,native LLM labels
+S6_llm_direct,NONCONTROLS,225,225,52,0.2311111111111111,225,52,0.2311111111111111,native LLM labels

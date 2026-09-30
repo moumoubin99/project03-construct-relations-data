@@ -1,0 +1,9 @@
+{
+  "requested_url": "https://raw.githubusercontent.com/HumanBehaviourChangeProject/ontologies/1a839af717aa29dc85b8c875cb1c33d648b4d271/MechanismOfAction/bcio_moa.owl",
+  "final_url": "https://raw.githubusercontent.com/HumanBehaviourChangeProject/ontologies/1a839af717aa29dc85b8c875cb1c33d648b4d271/MechanismOfAction/bcio_moa.owl",
+  "status": 200,
+  "content_type": "text/plain; charset=utf-8",
+  "bytes": 1601734,
+  "retrieved_utc": "2026-09-16T01:22:58.563817+00:00",
+  "sha256": "efdcd6b6f4c9e0cfa9009e761ffb9708f575b5293bfd4447a45fb56f510b4694"
+}

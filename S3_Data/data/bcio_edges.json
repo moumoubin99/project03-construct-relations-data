@@ -1,0 +1,1769 @@
+[
+  {
+    "id": "BCIO_EDGE_001",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_006043",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_050898",
+    "child_label": "self-efficacy belief for a behaviour and its associated outcomes",
+    "parent_label": "self-efficacy belief",
+    "child_definition": [
+      "A <self-efficacy belief> to organise and execute a behaviour and achieve the outcomes associated with this behaviour."
+    ],
+    "parent_definition": [
+      "A <belief> about one's capabilities to organise and execute a process or achieve an outcome."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "自我效能"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_002",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_006044",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006154",
+    "child_label": "situational self-efficacy belief for a behaviour",
+    "parent_label": "self-efficacy belief for a behaviour",
+    "child_definition": [
+      "A <self-efficacy belief for a behaviour> when a barrier or facilitator of the behaviour is encountered."
+    ],
+    "parent_definition": [
+      "A <self-efficacy belief> to organise and execute a behaviour."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "自我效能"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_003",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_006154",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_050898",
+    "child_label": "self-efficacy belief for a behaviour",
+    "parent_label": "self-efficacy belief",
+    "child_definition": [
+      "A <self-efficacy belief> to organise and execute a behaviour."
+    ],
+    "parent_definition": [
+      "A <belief> about one's capabilities to organise and execute a process or achieve an outcome."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "自我效能"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_004",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050576",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006154",
+    "child_label": "behaviour maintenance self-efficacy",
+    "parent_label": "self-efficacy belief for a behaviour",
+    "child_definition": [
+      "A <self-efficacy belief for a behaviour> that continues a behaviour pattern."
+    ],
+    "parent_definition": [
+      "A <self-efficacy belief> to organise and execute a behaviour."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "自我效能"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_005",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050584",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006154",
+    "child_label": "behavioural recovery self-efficacy",
+    "parent_label": "self-efficacy belief for a behaviour",
+    "child_definition": [
+      "A <self-efficacy belief for a behaviour> following a lapse in that behaviour"
+    ],
+    "parent_definition": [
+      "A <self-efficacy belief> to organise and execute a behaviour."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "自我效能"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_006",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050762",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006154",
+    "child_label": "self-efficacy belief for a behaviour during routine activities",
+    "parent_label": "self-efficacy belief for a behaviour",
+    "child_definition": [
+      "A <self-efficacy belief for a behaviour> that is enacted as part of activities that are routine."
+    ],
+    "parent_definition": [
+      "A <self-efficacy belief> to organise and execute a behaviour."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "自我效能"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_007",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050763",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006044",
+    "child_label": "self-efficacy belief for a behaviour in the face of social pressure",
+    "parent_label": "situational self-efficacy belief for a behaviour",
+    "child_definition": [
+      "A <situational self-efficacy belief for a behaviour> that is enacted against social pressire."
+    ],
+    "parent_definition": [
+      "A <self-efficacy belief for a behaviour> when a barrier or facilitator of the behaviour is encountered."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "自我效能"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_008",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050764",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006044",
+    "child_label": "self-efficacy belief for a behaviour under conditions of stress",
+    "parent_label": "situational self-efficacy belief for a behaviour",
+    "child_definition": [
+      "A <situational self-efficacy belief for a behaviour> that is enacted when under stress."
+    ],
+    "parent_definition": [
+      "A <self-efficacy belief for a behaviour> when a barrier or facilitator of the behaviour is encountered."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "自我效能"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_009",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050765",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_050898",
+    "child_label": "self-efficacy belief for avoiding a threat",
+    "parent_label": "self-efficacy belief",
+    "child_definition": [
+      "A <self-efficacy belief> that one can take actions to avoid, reduce, or remove a threat or its effects."
+    ],
+    "parent_definition": [
+      "A <belief> about one's capabilities to organise and execute a process or achieve an outcome."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "自我效能"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_010",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_006059",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006133",
+    "child_label": "motivation to comply",
+    "parent_label": "behavioural motivation",
+    "child_definition": [
+      "A <behavioural motivation> to act in accordance with the likely approval of others."
+    ],
+    "parent_definition": [
+      "A <mental process> that energises and directs a behaviour."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "行为动机"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_011",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_006134",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006133",
+    "child_label": "automatic behavioural motivation",
+    "parent_label": "behavioural motivation",
+    "child_definition": [
+      "<Behavioural motivation> that arises from emotions and impulses that result from associative learning or innate dispositions."
+    ],
+    "parent_definition": [
+      "A <mental process> that energises and directs a behaviour."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "行为动机"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_012",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_006136",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006302",
+    "child_label": "intrinsic motivation",
+    "parent_label": "autonomous motivation",
+    "child_definition": [
+      "<Autonomous motivation> due to a behaviour's inherent enjoyment, satisfaction or benefits to oneself."
+    ],
+    "parent_definition": [
+      "<Behavioural motivation> that is internally generated and based on a behaviour being interesting or valuable to an individual."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "行为动机"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_013",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_006300",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006308",
+    "child_label": "approval-based motivation",
+    "parent_label": "need-based motivation",
+    "child_definition": [
+      "A <need-based motivation> related to gaining or maintaining social approval or a positive self-evaluation."
+    ],
+    "parent_definition": [
+      "<Autonomous motivation> due to a behaviour being perceived to satisfy a psychological need."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "行为动机"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_014",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_006302",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006133",
+    "child_label": "autonomous motivation",
+    "parent_label": "behavioural motivation",
+    "child_definition": [
+      "<Behavioural motivation> that is internally generated and based on a behaviour being interesting or valuable to an individual."
+    ],
+    "parent_definition": [
+      "A <mental process> that energises and directs a behaviour."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "行为动机"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_015",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_006304",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006302",
+    "child_label": "behavioural importance-based motivation",
+    "parent_label": "autonomous motivation",
+    "child_definition": [
+      "<Autonomous motivation> due to the perceived value or importance of the behaviour to oneself."
+    ],
+    "parent_definition": [
+      "<Behavioural motivation> that is internally generated and based on a behaviour being interesting or valuable to an individual."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "行为动机"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_016",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_006307",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006133",
+    "child_label": "extrinsic motivation",
+    "parent_label": "behavioural motivation",
+    "child_definition": [
+      "<Behaviour motivation> that is based on external rewards, punishments or pressure regarding a behaviour."
+    ],
+    "parent_definition": [
+      "A <mental process> that energises and directs a behaviour."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "行为动机"
+    ],
+    "definition_names_parent": false,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_017",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_006308",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006302",
+    "child_label": "need-based motivation",
+    "parent_label": "autonomous motivation",
+    "child_definition": [
+      "<Autonomous motivation> due to a behaviour being perceived to satisfy a psychological need."
+    ],
+    "parent_definition": [
+      "<Behavioural motivation> that is internally generated and based on a behaviour being interesting or valuable to an individual."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "行为动机"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_018",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050318",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006133",
+    "child_label": "reflective behavioural motivation",
+    "parent_label": "behavioural motivation",
+    "child_definition": [
+      "<Behavioural motivation> that involves reflective thinking."
+    ],
+    "parent_definition": [
+      "A <mental process> that energises and directs a behaviour."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "行为动机"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_019",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050561",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_050634",
+    "child_label": "acquired drive",
+    "parent_label": "drive process",
+    "child_definition": [
+      "A <drive process> in which the physiological need is acquired through experience."
+    ],
+    "parent_definition": [
+      "A <behavioural motivation> that results from a physiological need."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "行为动机"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_020",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050634",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006133",
+    "child_label": "drive process",
+    "parent_label": "behavioural motivation",
+    "child_definition": [
+      "A <behavioural motivation> that results from a physiological need."
+    ],
+    "parent_definition": [
+      "A <mental process> that energises and directs a behaviour."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "行为动机"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_021",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050656",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006307",
+    "child_label": "extrinsic social motivation",
+    "parent_label": "extrinsic motivation",
+    "child_definition": [
+      "An <extrinsic motivation> that derives from external rewards, punishments or pressure regarding a behaviour."
+    ],
+    "parent_definition": [
+      "<Behaviour motivation> that is based on external rewards, punishments or pressure regarding a behaviour."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "行为动机"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_022",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050680",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_050634",
+    "child_label": "innate drive",
+    "parent_label": "drive process",
+    "child_definition": [
+      "A <drive process>in which the physiological need is determined prenatally."
+    ],
+    "parent_definition": [
+      "A <behavioural motivation> that results from a physiological need."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "行为动机"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_023",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050711",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_050713",
+    "child_label": "motivation to avert harm",
+    "parent_label": "motivation to reduce harm",
+    "child_definition": [
+      "<Motivation to reduce harm> that may occur in the future."
+    ],
+    "parent_definition": [
+      "<Behavioural motivation> to reduce harm."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "行为动机"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_024",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050712",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_050711",
+    "child_label": "motivation to reduce current harm",
+    "parent_label": "motivation to avert harm",
+    "child_definition": [
+      "<Motivation to reduce harm> that is ongoing."
+    ],
+    "parent_definition": [
+      "<Motivation to reduce harm> that may occur in the future."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "行为动机"
+    ],
+    "definition_names_parent": false,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_025",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050713",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006133",
+    "child_label": "motivation to reduce harm",
+    "parent_label": "behavioural motivation",
+    "child_definition": [
+      "<Behavioural motivation> to reduce harm."
+    ],
+    "parent_definition": [
+      "A <mental process> that energises and directs a behaviour."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "行为动机"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_026",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050767",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006133",
+    "child_label": "self-motive",
+    "parent_label": "behavioural motivation",
+    "child_definition": [
+      "A <behavioural motivation> that arises from a person’s self-identity."
+    ],
+    "parent_definition": [
+      "A <mental process> that energises and directs a behaviour."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "行为动机"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_027",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050947",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006133",
+    "child_label": "motivation to deviate",
+    "parent_label": "behavioural motivation",
+    "child_definition": [
+      "A <behavioural motivation> to act contrary to likely approval of others."
+    ],
+    "parent_definition": [
+      "A <mental process> that energises and directs a behaviour."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "行为动机"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_028",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050560",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006049",
+    "child_label": "accepted assigned goal",
+    "parent_label": "goal",
+    "child_definition": [
+      "An assigned <goal> that the person has some level of commitment to."
+    ],
+    "parent_definition": [
+      "A <cognitive representation> of an end state towards which one is striving."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "目标"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_029",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050562",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006049",
+    "child_label": "active goal",
+    "parent_label": "goal",
+    "child_definition": [
+      "A <goal> that is being pursued at any one point in time."
+    ],
+    "parent_definition": [
+      "A <cognitive representation> of an end state towards which one is striving."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "目标"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_030",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050569",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006049",
+    "child_label": "assigned goal",
+    "parent_label": "goal",
+    "child_definition": [
+      "A <goal> that has been set by another person."
+    ],
+    "parent_definition": [
+      "A <cognitive representation> of an end state towards which one is striving."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "目标"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_031",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050574",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006049",
+    "child_label": "background goal",
+    "parent_label": "goal",
+    "child_definition": [
+      "A <goal> that is not currently being pursued."
+    ],
+    "parent_definition": [
+      "A <cognitive representation> of an end state towards which one is striving."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "目标"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_032",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050668",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006049",
+    "child_label": "goal about one’s resources",
+    "parent_label": "goal",
+    "child_definition": [
+      "A <goal> that concerns protecting or increasing the person’s resources."
+    ],
+    "parent_definition": [
+      "A <cognitive representation> of an end state towards which one is striving."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "目标"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_033",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050726",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006049",
+    "child_label": "normative goal",
+    "parent_label": "goal",
+    "child_definition": [
+      "A <goal> that is consistent with a prevailing group norm."
+    ],
+    "parent_definition": [
+      "A <cognitive representation> of an end state towards which one is striving."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "目标"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_034",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050746",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006049",
+    "child_label": "proximal goal",
+    "parent_label": "goal",
+    "child_definition": [
+      "A <goal> that is about a scenario in the near future."
+    ],
+    "parent_definition": [
+      "A <cognitive representation> of an end state towards which one is striving."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "目标"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_035",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050766",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006049",
+    "child_label": "self-initiated goal",
+    "parent_label": "goal",
+    "child_definition": [
+      "A <goal> that a person has set for themselves."
+    ],
+    "parent_definition": [
+      "A <cognitive representation> of an end state towards which one is striving."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "目标"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_036",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050796",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006049",
+    "child_label": "well-specified goal",
+    "parent_label": "goal",
+    "child_definition": [
+      "A <goal> that is specified in sufficient detail for it to be clear when the goal has been achieved."
+    ],
+    "parent_definition": [
+      "A <cognitive representation> of an end state towards which one is striving."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "目标"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_037",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050937",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006049",
+    "child_label": "behavioural goal",
+    "parent_label": "goal",
+    "child_definition": [
+      "A <goal> in which the end state is a behaviour or behavioural pattern."
+    ],
+    "parent_definition": [
+      "A <cognitive representation> of an end state towards which one is striving."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "目标"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_038",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050939",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006049",
+    "child_label": "collaborative goal",
+    "parent_label": "goal",
+    "child_definition": [
+      "A <goal> that is set collaboratively between the person for which the goal is set and at least one other person."
+    ],
+    "parent_definition": [
+      "A <cognitive representation> of an end state towards which one is striving."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "目标"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_039",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050941",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006049",
+    "child_label": "distal goal",
+    "parent_label": "goal",
+    "child_definition": [
+      "A <goal> that is about a scenario that is in the distant future."
+    ],
+    "parent_definition": [
+      "A <cognitive representation> of an end state towards which one is striving."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "目标"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_040",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050945",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006049",
+    "child_label": "learning goal",
+    "parent_label": "goal",
+    "child_definition": [
+      "A <goal> that focuses on the acquisition of new skills or knowledge."
+    ],
+    "parent_definition": [
+      "A <cognitive representation> of an end state towards which one is striving."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "目标"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_041",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050966",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_050746",
+    "child_label": "hedonic goal",
+    "parent_label": "proximal goal",
+    "child_definition": [
+      "A <proximal goal> in which the end state is pleasure or relief from displeasure."
+    ],
+    "parent_definition": [
+      "A <goal> that is about a scenario in the near future."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "目标"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_042",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_006040",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006039",
+    "child_label": "perceived descriptive behavioural norm",
+    "parent_label": "perceived norm",
+    "child_definition": [
+      "A <perceived norm> regarding the prevalence of performance of a given behaviour by people within a group."
+    ],
+    "parent_definition": [
+      "A <belief about one's social environment> in terms of what is typical for people who belong to a particular group."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "感知规范"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_043",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_006041",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006039",
+    "child_label": "perceived evaluative behavioural norm",
+    "parent_label": "perceived norm",
+    "child_definition": [
+      "A <perceived norm> regarding whether a behaviour is appropriate and correct for people who belong to a particular group."
+    ],
+    "parent_definition": [
+      "A <belief about one's social environment> in terms of what is typical for people who belong to a particular group."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "感知规范"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_044",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_006042",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006039",
+    "child_label": "normative belief",
+    "parent_label": "perceived norm",
+    "child_definition": [
+      "A <perceived norm> regarding whether key others think one should perform a behaviour."
+    ],
+    "parent_definition": [
+      "A <belief about one's social environment> in terms of what is typical for people who belong to a particular group."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "感知规范"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_045",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050870",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006040",
+    "child_label": "overestimated perceived descriptive norm",
+    "parent_label": "perceived descriptive behavioural norm",
+    "child_definition": [
+      "A <perceived descriptive behavioural norm> in which the prevalence of a behaviour is overestimated."
+    ],
+    "parent_definition": [
+      "A <perceived norm> regarding the prevalence of performance of a given behaviour by people within a group."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "感知规范"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_046",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050885",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006040",
+    "child_label": "underestimated perceived descriptive norm",
+    "parent_label": "perceived descriptive behavioural norm",
+    "child_definition": [
+      "A <perceived descriptive behavioural norm> in which the prevalence of a behaviour is underestimated."
+    ],
+    "parent_definition": [
+      "A <perceived norm> regarding the prevalence of performance of a given behaviour by people within a group."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "感知规范"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_047",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050681",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006016",
+    "child_label": "intention for collective behaviour",
+    "parent_label": "behavioural intention",
+    "child_definition": [
+      "A <behavioural intention> to enact a behaviour with one or more others."
+    ],
+    "parent_definition": [
+      "A <mental disposition> to commit to enact or not enact a behaviour."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "行为意向"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_048",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050682",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006016",
+    "child_label": "intention not to enact a behaviour",
+    "parent_label": "behavioural intention",
+    "child_definition": [
+      "A <behavioural intention> not to enact a behaviour."
+    ],
+    "parent_definition": [
+      "A <mental disposition> to commit to enact or not enact a behaviour."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "行为意向"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_049",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050683",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006016",
+    "child_label": "intention to enact a behaviour",
+    "parent_label": "behavioural intention",
+    "child_definition": [
+      "A <behavioural intention> to enact a behaviour."
+    ],
+    "parent_definition": [
+      "A <mental disposition> to commit to enact or not enact a behaviour."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "行为意向"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_050",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_006035",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006038",
+    "child_label": "evaluation of self",
+    "parent_label": "evaluative belief",
+    "child_definition": [
+      "An <evaluative belief> about one's attributes."
+    ],
+    "parent_definition": [
+      "A <belief> about whether a particular aspect of the world is positive or negative."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "态度"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_051",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_006038",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_050328",
+    "child_label": "evaluative belief",
+    "parent_label": "attitude",
+    "child_definition": [
+      "A <belief> about whether a particular aspect of the world is positive or negative."
+    ],
+    "parent_definition": [
+      "A <mental disposition> that is an affective attitude or an evaluative belief about something."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "态度"
+    ],
+    "definition_names_parent": false,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_052",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_006147",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006038",
+    "child_label": "evaluative belief about a behaviour",
+    "parent_label": "evaluative belief",
+    "child_definition": [
+      "An <evaluative belief> about whether a behaviour is positive or negative."
+    ],
+    "parent_definition": [
+      "A <belief> about whether a particular aspect of the world is positive or negative."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "态度"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_053",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_006147",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_050329",
+    "child_label": "evaluative belief about a behaviour",
+    "parent_label": "attitude towards a behaviour",
+    "child_definition": [
+      "An <evaluative belief> about whether a behaviour is positive or negative."
+    ],
+    "parent_definition": [
+      "An <attitude> in which the entity that is the attitude object is a behaviour."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "态度"
+    ],
+    "definition_names_parent": false,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_054",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_006150",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006038",
+    "child_label": "evaluative belief about others",
+    "parent_label": "evaluative belief",
+    "child_definition": [
+      "An <evaluative belief> about the attributes of others."
+    ],
+    "parent_definition": [
+      "A <belief> about whether a particular aspect of the world is positive or negative."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "态度"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_055",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050326",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_050328",
+    "child_label": "affective attitude",
+    "parent_label": "attitude",
+    "child_definition": [
+      "A <mental disposition> to experience a subjective affective feeling about something."
+    ],
+    "parent_definition": [
+      "A <mental disposition> that is an affective attitude or an evaluative belief about something."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "态度"
+    ],
+    "definition_names_parent": false,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_056",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050327",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_050326",
+    "child_label": "affective attitude towards a behaviour",
+    "parent_label": "affective attitude",
+    "child_definition": [
+      "An <affective attitude> in which the entity that is the attitude object is a behaviour."
+    ],
+    "parent_definition": [
+      "A <mental disposition> to experience a subjective affective feeling about something."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "态度"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_057",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050327",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_050329",
+    "child_label": "affective attitude towards a behaviour",
+    "parent_label": "attitude towards a behaviour",
+    "child_definition": [
+      "An <affective attitude> in which the entity that is the attitude object is a behaviour."
+    ],
+    "parent_definition": [
+      "An <attitude> in which the entity that is the attitude object is a behaviour."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "态度"
+    ],
+    "definition_names_parent": false,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_058",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050329",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_050328",
+    "child_label": "attitude towards a behaviour",
+    "parent_label": "attitude",
+    "child_definition": [
+      "An <attitude> in which the entity that is the attitude object is a behaviour."
+    ],
+    "parent_definition": [
+      "A <mental disposition> that is an affective attitude or an evaluative belief about something."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "态度"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_059",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050564",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_050326",
+    "child_label": "affective attitude acquired through association",
+    "parent_label": "affective attitude",
+    "child_definition": [
+      "An <affective attitude> that results from associative learning."
+    ],
+    "parent_definition": [
+      "A <mental disposition> to experience a subjective affective feeling about something."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "态度"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_060",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050719",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006147",
+    "child_label": "negative evaluative belief about a behaviour",
+    "parent_label": "evaluative belief about a behaviour",
+    "child_definition": [
+      "An <evaluative belief about a behaviour> in which the behaviour is evaluated negatively."
+    ],
+    "parent_definition": [
+      "An <evaluative belief> about whether a behaviour is positive or negative."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "态度"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_061",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050735",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006147",
+    "child_label": "positive evaluative belief about a behaviour",
+    "parent_label": "evaluative belief about a behaviour",
+    "child_definition": [
+      "An <evaluative belief about a behaviour> in which the behaviour is evaluated positively."
+    ],
+    "parent_definition": [
+      "An <evaluative belief> about whether a behaviour is positive or negative."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "态度"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_062",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050872",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_050897",
+    "child_label": "positive evaluative belief about achieving a goal",
+    "parent_label": "evaluative belief about achieving a goal",
+    "child_definition": [
+      "An <evaluative belief about achieving a goal> in which the goal attainment is evaluated positively."
+    ],
+    "parent_definition": [
+      "An <evaluative belief> about acting in a way that achieves a goal."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "态度"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_063",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050873",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_050735",
+    "child_label": "positive evaluative belief about interacting with others",
+    "parent_label": "positive evaluative belief about a behaviour",
+    "child_definition": [
+      "A <positive evaluative belief about a behaviour> that involves interacting with other people."
+    ],
+    "parent_definition": [
+      "An <evaluative belief about a behaviour> in which the behaviour is evaluated positively."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "态度"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_064",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050897",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006038",
+    "child_label": "evaluative belief about achieving a goal",
+    "parent_label": "evaluative belief",
+    "child_definition": [
+      "An <evaluative belief> about acting in a way that achieves a goal."
+    ],
+    "parent_definition": [
+      "A <belief> about whether a particular aspect of the world is positive or negative."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "态度"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_065",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_006019",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_050217",
+    "child_label": "belief about consequences of behaviour",
+    "parent_label": "belief about consequences of an occurrence",
+    "child_definition": [
+      "A <belief about consequences of an occurrence> in terms of what results from or follows the performance of a behaviour."
+    ],
+    "parent_definition": [
+      "A <belief> about the outcomes resulting from an occurrence."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "结果信念"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_066",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_006020",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006019",
+    "child_label": "belief about social consequences of behaviour",
+    "parent_label": "belief about consequences of behaviour",
+    "child_definition": [
+      "A <belief about consequences of behaviour> in terms of their impact on the social environmental system."
+    ],
+    "parent_definition": [
+      "A <belief about consequences of an occurrence> in terms of what results from or follows the performance of a behaviour."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "结果信念"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_067",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_006021",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_050217",
+    "child_label": "belief about consequences of goal attainment",
+    "parent_label": "belief about consequences of an occurrence",
+    "child_definition": [
+      "A <belief about consequences of an occurrence> in terms of the outcomes resulting from achieving a goal."
+    ],
+    "parent_definition": [
+      "A <belief> about the outcomes resulting from an occurrence."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "结果信念"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_068",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_006024",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006026",
+    "child_label": "belief about likelihood of consequences of behaviour",
+    "parent_label": "belief about likelihood of consequences of an occurrence",
+    "child_definition": [
+      "A <belief about likelihood of consequences of an occurrence> in terms of the probability that a behaviour will result or not result in particular outcomes."
+    ],
+    "parent_definition": [
+      "A <belief about consequences of an occurrence> in terms the probability that a given event or state will occur or not occur in the future."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "结果信念"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_069",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_006025",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006024",
+    "child_label": "belief about likelihood of health consequences of behaviour",
+    "parent_label": "belief about likelihood of consequences of behaviour",
+    "child_definition": [
+      "A <belief about likelihood of consequences of behaviour> in terms of the probability of a behaviour resulting or not resulting in a change to health or wellbeing."
+    ],
+    "parent_definition": [
+      "A <belief about likelihood of consequences of an occurrence> in terms of the probability that a behaviour will result or not result in particular outcomes."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "结果信念"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_070",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_006026",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_050217",
+    "child_label": "belief about likelihood of consequences of an occurrence",
+    "parent_label": "belief about consequences of an occurrence",
+    "child_definition": [
+      "A <belief about consequences of an occurrence> in terms the probability that a given event or state will occur or not occur in the future."
+    ],
+    "parent_definition": [
+      "A <belief> about the outcomes resulting from an occurrence."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "结果信念"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_071",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_006033",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006019",
+    "child_label": "belief about the timing of the consequences of behaviour",
+    "parent_label": "belief about consequences of behaviour",
+    "child_definition": [
+      "A <belief about consequences of behaviour> in terms of how long after the performance of the behaviour they will occur."
+    ],
+    "parent_definition": [
+      "A <belief about consequences of an occurrence> in terms of what results from or follows the performance of a behaviour."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "结果信念"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_072",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_006140",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_050217",
+    "child_label": "belief about anticipated emotion",
+    "parent_label": "belief about consequences of an occurrence",
+    "child_definition": [
+      "A <belief about consequences of an occurrence> in terms of the potential emotions experienced as result of an event."
+    ],
+    "parent_definition": [
+      "A <belief> about the outcomes resulting from an occurrence."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "结果信念"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_073",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_006148",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006019",
+    "child_label": "evaluative belief about the consequences of behaviour",
+    "parent_label": "belief about consequences of behaviour",
+    "child_definition": [
+      "A <belief about consequences of behaviour> in terms of whether they are positive or negative."
+    ],
+    "parent_definition": [
+      "A <belief about consequences of an occurrence> in terms of what results from or follows the performance of a behaviour."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "结果信念"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_074",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_006149",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006148",
+    "child_label": "belief about the personal desirability of consequences of a behaviour",
+    "parent_label": "evaluative belief about the consequences of behaviour",
+    "child_definition": [
+      "An <evaluative belief about the consequences of behaviour> in terms of the value of the consequences of behaviour to oneself."
+    ],
+    "parent_definition": [
+      "A <belief about consequences of behaviour> in terms of whether they are positive or negative."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "结果信念"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_075",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050216",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006140",
+    "child_label": "belief about anticipated regret",
+    "parent_label": "belief about anticipated emotion",
+    "child_definition": [
+      "A <belief about anticipated emotion> in terms of the potential regret experienced as a result of an event."
+    ],
+    "parent_definition": [
+      "A <belief about consequences of an occurrence> in terms of the potential emotions experienced as result of an event."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "结果信念"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_076",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050218",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006019",
+    "child_label": "belief about emotional consequences of behaviour",
+    "parent_label": "belief about consequences of behaviour",
+    "child_definition": [
+      "A <belief about consequences of behaviour> in terms of resulting emotions."
+    ],
+    "parent_definition": [
+      "A <belief about consequences of an occurrence> in terms of what results from or follows the performance of a behaviour."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "结果信念"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_077",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050219",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006019",
+    "child_label": "belief about health consequences of behaviour",
+    "parent_label": "belief about consequences of behaviour",
+    "child_definition": [
+      "A <belief about consequences of behaviour> in terms of health and wellbeing."
+    ],
+    "parent_definition": [
+      "A <belief about consequences of an occurrence> in terms of what results from or follows the performance of a behaviour."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "结果信念"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_078",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050220",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006024",
+    "child_label": "belief about likelihood of emotional consequences of behaviour",
+    "parent_label": "belief about likelihood of consequences of behaviour",
+    "child_definition": [
+      "A <belief about likelihood of consequences of behaviour> in terms of the probability of a behaviour resulting or not resulting in a change to emotions."
+    ],
+    "parent_definition": [
+      "A <belief about likelihood of consequences of an occurrence> in terms of the probability that a behaviour will result or not result in particular outcomes."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "结果信念"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_079",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050221",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006024",
+    "child_label": "belief about likelihood of social consequences of behaviour",
+    "parent_label": "belief about likelihood of consequences of behaviour",
+    "child_definition": [
+      "A <belief about likelihood of consequences of behaviour> in terms of the probability of a behaviour resulting or not resulting in a change to social outcomes."
+    ],
+    "parent_definition": [
+      "A <belief about likelihood of consequences of an occurrence> in terms of the probability that a behaviour will result or not result in particular outcomes."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "结果信念"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_080",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050585",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006148",
+    "child_label": "belief about a behaviour meeting a need",
+    "parent_label": "evaluative belief about the consequences of behaviour",
+    "child_definition": [
+      "An <evaluative belief about the consequences of behaviour> reducing a need in some person."
+    ],
+    "parent_definition": [
+      "A <belief about consequences of behaviour> in terms of whether they are positive or negative."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "结果信念"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_081",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050590",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006021",
+    "child_label": "belief about emotional consequences of goal attainment",
+    "parent_label": "belief about consequences of goal attainment",
+    "child_definition": [
+      "A <belief about consequences of goal attainment> that focuses on the emotional response following that attainment."
+    ],
+    "parent_definition": [
+      "A <belief about consequences of an occurrence> in terms of the outcomes resulting from achieving a goal."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "结果信念"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_082",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050594",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006024",
+    "child_label": "belief about likelihood of financial consequences of a behaviour",
+    "parent_label": "belief about likelihood of consequences of behaviour",
+    "child_definition": [
+      "A <belief about likelihood of consequences of behaviour> in terms of the probability of a behaviour resulting or not resulting in a change to financial outcomes."
+    ],
+    "parent_definition": [
+      "A <belief about likelihood of consequences of an occurrence> in terms of the probability that a behaviour will result or not result in particular outcomes."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "结果信念"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_083",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050604",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006019",
+    "child_label": "belief about the financial consequences of a behaviour",
+    "parent_label": "belief about consequences of behaviour",
+    "child_definition": [
+      "A <belief about consequences of behaviour> in terms of finance."
+    ],
+    "parent_definition": [
+      "A <belief about consequences of an occurrence> in terms of what results from or follows the performance of a behaviour."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "结果信念"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_084",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050605",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_050219",
+    "child_label": "belief about the negative health consequences of a behaviour",
+    "parent_label": "belief about health consequences of behaviour",
+    "child_definition": [
+      "A <belief about health consequences of a behaviour> in which the consequences are evaluated as negative."
+    ],
+    "parent_definition": [
+      "A <belief about consequences of behaviour> in terms of health and wellbeing."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "结果信念"
+    ],
+    "definition_names_parent": false,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_085",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050606",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_050218",
+    "child_label": "belief about the positive emotional consequences of a behaviour",
+    "parent_label": "belief about emotional consequences of behaviour",
+    "child_definition": [
+      "A <belief about emotional consequences of behaviour> where the emotions are positive."
+    ],
+    "parent_definition": [
+      "A <belief about consequences of behaviour> in terms of resulting emotions."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "结果信念"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_086",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050607",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_050219",
+    "child_label": "belief about the positive health consequences of a behaviour",
+    "parent_label": "belief about health consequences of behaviour",
+    "child_definition": [
+      "A <belief about health consequences of behaviour> in which the consequences are evaluated as positive."
+    ],
+    "parent_definition": [
+      "A <belief about consequences of behaviour> in terms of health and wellbeing."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "结果信念"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_087",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050608",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006020",
+    "child_label": "belief about the positive social consequences of a behaviour",
+    "parent_label": "belief about social consequences of behaviour",
+    "child_definition": [
+      "A <belief about social consequences of behaviour> where those consequences are evaluated positively."
+    ],
+    "parent_definition": [
+      "A <belief about consequences of behaviour> in terms of their impact on the social environmental system."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "结果信念"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_088",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050623",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006024",
+    "child_label": "coping efficacy belief",
+    "parent_label": "belief about likelihood of consequences of behaviour",
+    "child_definition": [
+      "A <belief about likelihood of consequences of a behaviour> in terms of coping."
+    ],
+    "parent_definition": [
+      "A <belief about likelihood of consequences of an occurrence> in terms of the probability that a behaviour will result or not result in particular outcomes."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "结果信念"
+    ],
+    "definition_names_parent": false,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_089",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050645",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006148",
+    "child_label": "evaluative belief about the consequences of one’s behaviour",
+    "parent_label": "evaluative belief about the consequences of behaviour",
+    "child_definition": [
+      "An <evaluative belief about the consequences of behaviour> in terms of one's own behaviour."
+    ],
+    "parent_definition": [
+      "A <belief about consequences of behaviour> in terms of whether they are positive or negative."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "结果信念"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_090",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050646",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_050645",
+    "child_label": "evaluative belief about the consequences of one’s past behaviour",
+    "parent_label": "evaluative belief about the consequences of one’s behaviour",
+    "child_definition": [
+      "An <evaluative belief about the consequences of one’s behaviour> that has been previously enacted."
+    ],
+    "parent_definition": [
+      "An <evaluative belief about the consequences of behaviour> in terms of one's own behaviour."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "结果信念"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_091",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050647",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006148",
+    "child_label": "evaluative belief about the negative consequences of a behaviour",
+    "parent_label": "evaluative belief about the consequences of behaviour",
+    "child_definition": [
+      "An <evaluative belief about the consequences of behaviour> in which those consequences are evaluated as negative."
+    ],
+    "parent_definition": [
+      "A <belief about consequences of behaviour> in terms of whether they are positive or negative."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "结果信念"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_092",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050648",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_006148",
+    "child_label": "evaluative belief about the positive consequences of a behaviour",
+    "parent_label": "evaluative belief about the consequences of behaviour",
+    "child_definition": [
+      "An <evaluative belief about the consequences of behaviour> in which those consequences are evaluated as positive."
+    ],
+    "parent_definition": [
+      "A <belief about consequences of behaviour> in terms of whether they are positive or negative."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "结果信念"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  },
+  {
+    "id": "BCIO_EDGE_093",
+    "child_id": "http://humanbehaviourchange.org/ontology/BCIO_050649",
+    "parent_id": "http://humanbehaviourchange.org/ontology/BCIO_050645",
+    "child_label": "evaluative belief about the possible future consequences of one’s behaviour",
+    "parent_label": "evaluative belief about the consequences of one’s behaviour",
+    "child_definition": [
+      "An <evaluative belief about the consequences of one’s behaviour> in terms of all possible future consequences."
+    ],
+    "parent_definition": [
+      "An <evaluative belief about the consequences of behaviour> in terms of one's own behaviour."
+    ],
+    "source_assertion": "rdfs:subClassOf",
+    "families": [
+      "结果信念"
+    ],
+    "definition_names_parent": true,
+    "use_status": "candidate_positive_edges_not_complete_classification_benchmark"
+  }
+]

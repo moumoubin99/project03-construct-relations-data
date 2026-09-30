@@ -1,0 +1,102 @@
+{
+  "review_kind": "assistant source-and-context audit, not human gold annotation",
+  "reviewer": "Codex",
+  "main_conclusion": "No original pair has been approved here as a directly transplantable complete relation reference. This is a conservative audit decision, not proof that suitable evidence does not exist.",
+  "cases": [
+    {
+      "id": "R004",
+      "status": "context_mismatch",
+      "reason": "原题社会影响为UTAUT技术使用，公开例子来自其他行为理论；主观规范也对应多个节点。"
+    },
+    {
+      "id": "R008",
+      "status": "ambiguous_mapping_no_pair_assertion",
+      "reason": "自我效能在公开例子中跨多个范围节点；Rosenberg整体自尊不能仅据Pressure System Model例子映射。"
+    },
+    {
+      "id": "R010",
+      "status": "assertion_found_but_not_transferable",
+      "reason": "Cognitive Atlas确认一般selective attention KINDOF attention，页面标Unreviewed；正式材料却是特征整合理论视觉聚焦注意与印刷广告视觉注意，不能覆盖为该一般父子关系。"
+    },
+    {
+      "id": "R030",
+      "status": "no_pair_assertion",
+      "reason": "意向和行为节点可检索；不同节点不直接给出本文关系答案，B还是原研究操作性定义。"
+    },
+    {
+      "id": "R033",
+      "status": "same_name_not_scale_equivalence",
+      "reason": "两侧是十题RSES与未核定短版，落入同一宽泛节点不能证明两版关系或测量等值。"
+    },
+    {
+      "id": "R037",
+      "status": "conflicting_example_mappings",
+      "reason": "感知有用性例子与结果预期例子可落在同一节点或父子节点；结果预期例子的理论来源不等于正式题Bandura1977。"
+    },
+    {
+      "id": "R041",
+      "status": "scope_narrowed_no_pair_assertion",
+      "reason": "正式题为STAI状态焦虑及PSS感知压力，不是一般anxiety/stress；不同节点不是无关证据。"
+    },
+    {
+      "id": "R044",
+      "status": "same_name_context_mismatch",
+      "reason": "PANAS情感和Norman设计框架不能因名称归入affective process就判等价；原材料仍未完整核定。"
+    },
+    {
+      "id": "R056",
+      "status": "no_pair_assertion",
+      "reason": "内在动机有正式节点，感知愉悦只是TAM例子；未取得可移植的关系边，不能推定父子关系。"
+    },
+    {
+      "id": "R058",
+      "status": "distinct_nodes_not_negative_gold",
+      "reason": "焦虑与恐惧存在概念节点，但没有相应对级参考答案；恐惧原材料仍待核定。"
+    },
+    {
+      "id": "R064",
+      "status": "ambiguous_mapping_no_pair_assertion",
+      "reason": "自我效能和控制点有例子线索，但理论范围不能唯一对应，未取得对级关系断言。"
+    },
+    {
+      "id": "R067",
+      "status": "context_mismatch",
+      "reason": "PBC和促进条件相关例子不能直接替代Ajzen1991与UTAUT2003的范围，未取得可移植对级关系。"
+    },
+    {
+      "id": "R073",
+      "status": "same_name_not_scale_equivalence",
+      "reason": "原十题RSES与未识别改写版本不能用同一节点消除版本缺口。"
+    },
+    {
+      "id": "R078",
+      "status": "scope_narrowed_no_pair_assertion",
+      "reason": "正式题是对指定行为的态度和TPB三类信念；一般attitude/belief节点没有直接给出这对关系。"
+    },
+    {
+      "id": "R087",
+      "status": "same_name_not_scale_equivalence",
+      "reason": "NEO-PI-R与BFI的宜人性概念范围需要侧面信息；共用agreeableness节点不证明概念或量表可互换。"
+    },
+    {
+      "id": "R091",
+      "status": "no_pair_assertion",
+      "reason": "态度和行为意向节点可检索，但没有可直接套用的等价/重叠/无关断言。"
+    },
+    {
+      "id": "R094",
+      "status": "same_name_not_scale_equivalence",
+      "reason": "NEO-PI-R与BFI开放性范围不可仅据同一openness节点判定关系。"
+    }
+  ],
+  "follow_up_leads": [
+    {
+      "name": "CID original dataset",
+      "source_chain": "HICSS2020 Ludwig/Funk/Mueller reference26 points to Larsen/Bong GoldStandard",
+      "citing_paper": "https://publikationen.bibliothek.kit.edu/1000141294/136631748",
+      "dataset_page": "https://www.researchgate.net/publication/317901676_GoldStandard",
+      "availability": "Dataset page identified, contents/download/license not retrieved; do not count as available benchmark.",
+      "scope": "Construct correspondence, not complete13-way truth."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+Construct 1:
+  label:       {label_1}
+  discipline:  {disc_1}
+  definition:  {def_1}
+  items:       {items_1}
+
+Construct 2:
+  label:       {label_2}
+  discipline:  {disc_2}
+  definition:  {def_2}
+  items:       {items_2}
+
+Apply Q-α → Q-ε. Emit the JSON object now.

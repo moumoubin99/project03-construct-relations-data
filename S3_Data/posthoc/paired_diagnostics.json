@@ -1,0 +1,148 @@
+{
+  "analysis": "Post hoc descriptive paired diagnostics; no new model calls",
+  "source_sha256": "dec095497b1a1d7e7a5335751eeca7a6395d866736c5c15c19c9891f45f20bea",
+  "contrasts": [
+    {
+      "provider": "glm",
+      "condition": "labels",
+      "contrast": "F-L",
+      "n": 186,
+      "gains": 8,
+      "losses": 14,
+      "net": -6,
+      "both_valid": {
+        "n": 177,
+        "gains": 6,
+        "losses": 11
+      },
+      "changed_labels_both_valid": 26
+    },
+    {
+      "provider": "glm",
+      "condition": "labels",
+      "contrast": "F-D",
+      "n": 186,
+      "gains": 6,
+      "losses": 24,
+      "net": -18,
+      "both_valid": {
+        "n": 176,
+        "gains": 3,
+        "losses": 20
+      },
+      "changed_labels_both_valid": 33
+    },
+    {
+      "provider": "glm",
+      "condition": "definitions",
+      "contrast": "F-L",
+      "n": 186,
+      "gains": 21,
+      "losses": 14,
+      "net": 7,
+      "both_valid": {
+        "n": 180,
+        "gains": 17,
+        "losses": 13
+      },
+      "changed_labels_both_valid": 33
+    },
+    {
+      "provider": "glm",
+      "condition": "definitions",
+      "contrast": "F-D",
+      "n": 186,
+      "gains": 13,
+      "losses": 24,
+      "net": -11,
+      "both_valid": {
+        "n": 180,
+        "gains": 11,
+        "losses": 22
+      },
+      "changed_labels_both_valid": 34
+    },
+    {
+      "provider": "qwen",
+      "condition": "labels",
+      "contrast": "F-L",
+      "n": 186,
+      "gains": 2,
+      "losses": 2,
+      "net": 0,
+      "both_valid": {
+        "n": 186,
+        "gains": 2,
+        "losses": 2
+      },
+      "changed_labels_both_valid": 5
+    },
+    {
+      "provider": "qwen",
+      "condition": "labels",
+      "contrast": "F-D",
+      "n": 186,
+      "gains": 6,
+      "losses": 10,
+      "net": -4,
+      "both_valid": {
+        "n": 186,
+        "gains": 6,
+        "losses": 10
+      },
+      "changed_labels_both_valid": 24
+    },
+    {
+      "provider": "qwen",
+      "condition": "definitions",
+      "contrast": "F-L",
+      "n": 186,
+      "gains": 2,
+      "losses": 0,
+      "net": 2,
+      "both_valid": {
+        "n": 186,
+        "gains": 2,
+        "losses": 0
+      },
+      "changed_labels_both_valid": 2
+    },
+    {
+      "provider": "qwen",
+      "condition": "definitions",
+      "contrast": "F-D",
+      "n": 186,
+      "gains": 0,
+      "losses": 0,
+      "net": 0,
+      "both_valid": {
+        "n": 185,
+        "gains": 0,
+        "losses": 0
+      },
+      "changed_labels_both_valid": 2
+    }
+  ],
+  "figure_counts": {
+    "glm/labels": [
+      108,
+      90,
+      96
+    ],
+    "glm/definitions": [
+      151,
+      140,
+      133
+    ],
+    "qwen/labels": [
+      144,
+      140,
+      140
+    ],
+    "qwen/definitions": [
+      179,
+      179,
+      177
+    ]
+  }
+}

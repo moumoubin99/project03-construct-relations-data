@@ -1,0 +1,25 @@
+{
+  "requested_ids": [
+    "trm_4a3fd79d09902",
+    "trm_4a3fd79d09947",
+    "trm_4a3fd79d09b85",
+    "trm_4a3fd79d0b043",
+    "trm_4a3fd79d0b2a8",
+    "trm_4a3fd79d0b689",
+    "trm_5022ef7599294",
+    "trm_523ca7e778c50",
+    "trm_523f5ee64102c",
+    "trm_523f5f918cb2c"
+  ],
+  "failures": {},
+  "links": [
+    {
+      "item_id": "R010",
+      "from_id": "trm_4a3fd79d0b043",
+      "to_id": "trm_4a3fd79d09902",
+      "relationship": "KINDOF",
+      "direction": "parent",
+      "interpretation": "resource_assertion_only; original contexts require separate review"
+    }
+  ]
+}

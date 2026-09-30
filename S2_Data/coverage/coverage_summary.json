@@ -1,0 +1,70 @@
+{
+  "scope": "candidate retrieval, not verified relation coverage or gold-label creation",
+  "bcio_version": "http://humanbehaviourchange.org/ontology/MechanismOfAction/bcio_moa.owl/2026-09-11",
+  "bcio_labeled_classes_including_imports": 1904,
+  "bcio_native_classes": 1691,
+  "native_edges_with_two_defined_endpoints": 1433,
+  "cognitive_atlas": {
+    "response_type": "list",
+    "count": 918,
+    "next": null
+  },
+  "original_96": {
+    "pairs": 96,
+    "side_occurrences": 192,
+    "BCIO_MoA": {
+      "sides_with_name_candidates": 19,
+      "pairs_with_both_name_candidates": 4,
+      "pairs_with_any_name_candidate": 15
+    },
+    "Cognitive_Atlas": {
+      "sides_with_name_candidates": 25,
+      "pairs_with_both_name_candidates": 4,
+      "pairs_with_any_name_candidate": 21
+    },
+    "either": {
+      "sides_with_name_candidates": 30,
+      "pairs_with_both_name_candidates": 6,
+      "pairs_with_any_name_candidate": 24
+    },
+    "pairs_with_candidate_graph_links": 0,
+    "pairs_with_candidate_subclass_links": 0
+  },
+  "formal_66_original_name_screen": {
+    "pairs": 66,
+    "side_occurrences": 132,
+    "BCIO_MoA": {
+      "sides_with_name_candidates": 15,
+      "pairs_with_both_name_candidates": 3,
+      "pairs_with_any_name_candidate": 12
+    },
+    "Cognitive_Atlas": {
+      "sides_with_name_candidates": 16,
+      "pairs_with_both_name_candidates": 3,
+      "pairs_with_any_name_candidate": 13
+    },
+    "either": {
+      "sides_with_name_candidates": 21,
+      "pairs_with_both_name_candidates": 5,
+      "pairs_with_any_name_candidate": 16
+    },
+    "pairs_with_candidate_graph_links": 0,
+    "pairs_with_candidate_subclass_links": 0
+  },
+  "matching": "NFKC/case/punctuation and behaviour spelling normalization; full or parenthesis-removed name equals label/alias; examples excluded",
+  "limitations": [
+    "Aliases can be broad; qualifiers must be reviewed.",
+    "Counts are occurrences, not independent constructs.",
+    "Cognitive Atlas parent edges not available in the concept response.",
+    "No model outputs or human ratings used to choose mappings.",
+    "Formal66 screen uses original names as retrieval keys; prepared names/definitions must be reviewed separately."
+  ],
+  "input_hashes": {
+    "C:\\Users\\A\\Documents\\ChatGPT\\论文\\project03_experiments_20260914\\reviewer_1\\reference_template_96_pairs.csv": "040533b52d2601623a4cec24f1f1918c22debe6a7046f78b7c18589d5f5414db",
+    "C:\\Users\\A\\Documents\\ChatGPT\\论文\\project03_experiments_20260914\\private_mapping\\DO_NOT_GIVE_TO_REVIEWERS.csv": "5d60bc139744c3d73faba9c287d21fcd66611a80a6bd01d9baf1e3965739b31d",
+    "C:\\Users\\A\\Documents\\ChatGPT\\论文\\supplementary_20260915\\source_context\\combined.json": "53329d1fd059287c24aa1e2605333dd6ed66a7560d3eb9f3961e30ef135c23f9",
+    "C:\\Users\\A\\Documents\\ChatGPT\\论文\\supplementary_20260915\\analysis\\recovered\\pair_predictions.csv": "afac756aba679dd0bea7610c5a7e5630ad041b49c428c3a240fc7df5e9f4227d",
+    "C:\\Users\\A\\Documents\\ChatGPT\\论文\\project03_revision\\plos_revision_20260914\\replication\\data\\BENCHMARK_v0.4.yaml": "4f69de40860cfaf8dde0a85ed4cea241810a566eb4fb31837d79affd5025fc19",
+    "C:\\Users\\A\\Documents\\ChatGPT\\论文\\project03_revision\\plos_revision_20260914\\paper\\manuscript\\main.tex": "3a01ff075b12af8680d5f3bcd24d29764ce5ea0eec1487fd6534ac9074e8b1c3"
+  }
+}

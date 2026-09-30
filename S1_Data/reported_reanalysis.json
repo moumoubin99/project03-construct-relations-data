@@ -1,0 +1,2554 @@
+{
+  "schema_version": "1.0",
+  "scope": "Bounded offline reanalysis of frozen Project03 results; no new model or human judgments",
+  "runtime": {
+    "python": "3.12.3",
+    "PyYAML": "6.0.1",
+    "dependencies": [
+      "Python standard library",
+      "PyYAML"
+    ],
+    "seed": 20260914
+  },
+  "inputs": {
+    "BENCHMARK_v0.4.yaml": {
+      "sha256": "4f69de40860cfaf8dde0a85ed4cea241810a566eb4fb31837d79affd5025fc19",
+      "bytes": 177447
+    },
+    "label_panel_v1.6_chinese_full.yaml": {
+      "sha256": "107dbcde40d7fd13d6fb11b494b1a66438eb8f00c90d80c4681caddde5d29fb2",
+      "bytes": 1103351
+    },
+    "S6_kimi_direct_v1.6.json": {
+      "sha256": "95ff499bf1d8810345ebf1fc39bcd7a78518a294da879adf20a759463c2bd993",
+      "bytes": 474861
+    },
+    "query_generic_embedding_v1.6.json": {
+      "sha256": "f378bb5d405a5a85ca2b13630e43bd91fb1b60b89309fd11cf06453bb24d35b9",
+      "bytes": 46171
+    },
+    "query_wulff_mata_v1.6.json": {
+      "sha256": "378c1d609170283024bdc586b3c6fdb8a84f0ef7da83e0bb8ef51f3edb831ba3",
+      "bytes": 61394
+    },
+    "validation_risk_table.csv": {
+      "sha256": "8d92eaae076b63dba8b808ecaba1a344194ca46981d8318e9adb46531c80bb30",
+      "bytes": 16159
+    },
+    "validation_risk_table.json": {
+      "sha256": "83704f4b17d611b604c4c9ddfdd09e22075841fb405d7e628d700d1818520b2e",
+      "bytes": 65347
+    },
+    "FINAL_analysis_v1.6.json": {
+      "sha256": "2c867669037344bbc6cf258a5bd717e02986e90e5c60ba1a787fa6a708f4f716",
+      "bytes": 16082,
+      "role": "comparison only, never computational input"
+    }
+  },
+  "rule_evidence": {
+    "analyze_results.py": {
+      "sha256": "d40b0f8372a7cbad898d84e985825f687d25c257d7570a6bf6f3433aa7bf52fa",
+      "role": "read-only rule evidence; not imported or executed"
+    },
+    "run_label_panel.py": {
+      "sha256": "a432db7f8a8b263fc52667e76ef616d590774a511d6ba844340d8c505e3a5e91",
+      "role": "read-only rule evidence; not imported or executed"
+    },
+    "common.py": {
+      "sha256": "890727756f69c2ce2b2a5f381ee2269a238ae5589e3d06fac4ec3efc8d250cee",
+      "role": "read-only rule evidence; not imported or executed"
+    },
+    "build_validation_risk.py": {
+      "sha256": "2e6aa1331bfcbb8752ccaee6c97c8426a7a376d45f6d93003250bb69a4629bb8",
+      "role": "read-only rule evidence; not imported or executed"
+    },
+    "query_llm_direct.py": {
+      "sha256": "2a88dea655d3d3ed340d3796d23ed9c514f9ac5365ebbfb9a337428343a619a7",
+      "role": "read-only rule evidence; not imported or executed"
+    },
+    "query_generic_embedding.py": {
+      "sha256": "ee38b5565c23f217c0b4c1d2dc51fb894ca863e926a811ee70b47085a78a12e6",
+      "role": "read-only rule evidence; not imported or executed"
+    },
+    "query_wulff_mata.py": {
+      "sha256": "63c47e7a2b6cb13f397463d9e2632d1bb101cc005ffbbdf65be4be273e8e355d",
+      "role": "read-only rule evidence; not imported or executed"
+    }
+  },
+  "panel": {
+    "n_pairs": 96,
+    "n_attempts": 864,
+    "n_valid": 847,
+    "n_invalid": 17,
+    "judges": [
+      "deepseek-chat",
+      "qwen3-max",
+      "glm-4.6"
+    ],
+    "valid_call_rule": "error is None and label_assigned is one of L1..L6; no retries or raw-response reparsing",
+    "entropy_definitions": {
+      "vote_entropy": "Shannon entropy -sum p*log2(p) of labels across all valid raw calls in each pair; bits, not normalized. Calls carry equal weight; missing calls reduce a judge's contribution.",
+      "first_yes_entropy": "Same raw-valid-call calculation for first_yes_question; empty first-YES fields excluded; bits, not normalized. Separate from modal reliability.",
+      "judge_modal_entropy_bits": "Sensitivity: Shannon entropy of one untied modal label per available judge (equal judge weight). Missing and tied judge modes excluded; denominator 3 for 93 pairs and 2 for 3 pairs. Bits, not divided by log2(3)."
+    },
+    "aggregation_rule": "Unique per-judge modal across valid replicates; tied modes excluded. Across retained judge modals use unique mode; >=2 tied judges or tied across-judge modes produce TIE. Matches archived rule, checked against stored aggregation only after reconstruction.",
+    "majority_label_counts": {
+      "L1": 15,
+      "L2": 37,
+      "L3": 29,
+      "L4": 2,
+      "L5": 5,
+      "L6": 6,
+      "TIE": 2
+    },
+    "tie_pair_ids": [
+      "A.02",
+      "B.14"
+    ],
+    "per_judge_modal_tie_cells": 2,
+    "per_judge_modal_missing_cells": 3,
+    "first_yes_missing_on_valid_calls": 0,
+    "category_summary": [
+      {
+        "category": "ALL",
+        "n_pairs": 96,
+        "n_disagreement": 35,
+        "n_panel_ties": 2,
+        "n_unanimous_valid_calls": 61,
+        "mean_vote_entropy_bits": 0.321944467096693,
+        "mean_first_yes_entropy_bits": 0.321944467096693,
+        "mean_judge_modal_entropy_bits": 0.28172517382144835
+      },
+      {
+        "category": "A",
+        "n_pairs": 5,
+        "n_disagreement": 2,
+        "n_panel_ties": 1,
+        "n_unanimous_valid_calls": 3,
+        "mean_vote_entropy_bits": 0.576427434382175,
+        "mean_first_yes_entropy_bits": 0.576427434382175,
+        "mean_judge_modal_entropy_bits": 0.5006516669551291
+      },
+      {
+        "category": "A_prime",
+        "n_pairs": 14,
+        "n_disagreement": 1,
+        "n_panel_ties": 0,
+        "n_unanimous_valid_calls": 13,
+        "mean_vote_entropy_bits": 0.06559255957532069,
+        "mean_first_yes_entropy_bits": 0.06559255957532069,
+        "mean_judge_modal_entropy_bits": 0.06559255957532069
+      },
+      {
+        "category": "B",
+        "n_pairs": 20,
+        "n_disagreement": 15,
+        "n_panel_ties": 1,
+        "n_unanimous_valid_calls": 5,
+        "mean_vote_entropy_bits": 0.684208968595349,
+        "mean_first_yes_entropy_bits": 0.684208968595349,
+        "mean_judge_modal_entropy_bits": 0.6302256254687515
+      },
+      {
+        "category": "C",
+        "n_pairs": 36,
+        "n_disagreement": 17,
+        "n_panel_ties": 0,
+        "n_unanimous_valid_calls": 19,
+        "mean_vote_entropy_bits": 0.372834901761394,
+        "mean_first_yes_entropy_bits": 0.372834901761394,
+        "mean_judge_modal_entropy_bits": 0.3060986113514965
+      },
+      {
+        "category": "D",
+        "n_pairs": 21,
+        "n_disagreement": 0,
+        "n_panel_ties": 0,
+        "n_unanimous_valid_calls": 21,
+        "mean_vote_entropy_bits": 0.0,
+        "mean_first_yes_entropy_bits": 0.0,
+        "mean_judge_modal_entropy_bits": 0.0
+      }
+    ],
+    "reliability": {
+      "unit": "pair; nominal L1-L6; one untied modal label per judge",
+      "fleiss_kappa": 0.71416964001837,
+      "krippendorff_alpha_nominal": 0.7215027220775707,
+      "fleiss_complete_pairs": 93,
+      "alpha_pairable_pairs": 96,
+      "available_modal_judges_per_pair_counts": {
+        "3": 93,
+        "2": 3
+      },
+      "bootstrap": {
+        "method": "Unstratified pair bootstrap; resample all panel pairs with replacement, retain all judge modals for each selected pair; percentile 95% CI. Fleiss uses complete-judge pairs within each draw; alpha uses pairable pairs.",
+        "iterations": 5000,
+        "seed": 20260914,
+        "rng": "Python random.Random (MT19937)",
+        "fleiss_kappa_ci95": [
+          0.6163437535277593,
+          0.7994595509773731
+        ],
+        "krippendorff_alpha_ci95": [
+          0.6266550620434844,
+          0.8051332129080085
+        ],
+        "valid_fleiss_draws": 5000,
+        "valid_alpha_draws": 5000,
+        "limitation": "Describes variation across this designed pair collection; does not resample judges or establish external population validity."
+      },
+      "legacy_lexicographic_tiebreak_sensitivity": {
+        "role": "Comparison reconstructed from raw calls; not the primary tie policy",
+        "fleiss_kappa": 0.7102971571849693,
+        "krippendorff_alpha_nominal": 0.7132448781792052,
+        "fleiss_complete_pairs": 95,
+        "affected_cells": [
+          {
+            "pair_id": "B.13",
+            "judge": "glm-4.6",
+            "candidates": [
+              "L2",
+              "L5",
+              "L6"
+            ]
+          },
+          {
+            "pair_id": "C.27",
+            "judge": "glm-4.6",
+            "candidates": [
+              "L2",
+              "L5"
+            ]
+          }
+        ],
+        "cause": "analyze_results.py assigns winners[0] to tied within-judge modes; run_label_panel.py excludes those modes. Primary analysis follows the latter consistently."
+      }
+    },
+    "raw_call_L4": [
+      {
+        "judge": "ALL",
+        "category": "ALL",
+        "attempts": 864,
+        "valid": 847,
+        "invalid": 17,
+        "n_L4": 18,
+        "L4_rate_valid_calls": 0.021251475796930343,
+        "L4_rate_all_attempts_descriptive": 0.020833333333333332,
+        "error_count": 17,
+        "invalid_label_without_error": 0
+      },
+      {
+        "judge": "ALL",
+        "category": "A",
+        "attempts": 45,
+        "valid": 45,
+        "invalid": 0,
+        "n_L4": 0,
+        "L4_rate_valid_calls": 0.0,
+        "L4_rate_all_attempts_descriptive": 0.0,
+        "error_count": 0,
+        "invalid_label_without_error": 0
+      },
+      {
+        "judge": "ALL",
+        "category": "A_prime",
+        "attempts": 126,
+        "valid": 123,
+        "invalid": 3,
+        "n_L4": 0,
+        "L4_rate_valid_calls": 0.0,
+        "L4_rate_all_attempts_descriptive": 0.0,
+        "error_count": 3,
+        "invalid_label_without_error": 0
+      },
+      {
+        "judge": "ALL",
+        "category": "B",
+        "attempts": 180,
+        "valid": 175,
+        "invalid": 5,
+        "n_L4": 18,
+        "L4_rate_valid_calls": 0.10285714285714286,
+        "L4_rate_all_attempts_descriptive": 0.1,
+        "error_count": 5,
+        "invalid_label_without_error": 0
+      },
+      {
+        "judge": "ALL",
+        "category": "C",
+        "attempts": 324,
+        "valid": 320,
+        "invalid": 4,
+        "n_L4": 0,
+        "L4_rate_valid_calls": 0.0,
+        "L4_rate_all_attempts_descriptive": 0.0,
+        "error_count": 4,
+        "invalid_label_without_error": 0
+      },
+      {
+        "judge": "ALL",
+        "category": "D",
+        "attempts": 189,
+        "valid": 184,
+        "invalid": 5,
+        "n_L4": 0,
+        "L4_rate_valid_calls": 0.0,
+        "L4_rate_all_attempts_descriptive": 0.0,
+        "error_count": 5,
+        "invalid_label_without_error": 0
+      },
+      {
+        "judge": "deepseek-chat",
+        "category": "ALL",
+        "attempts": 288,
+        "valid": 288,
+        "invalid": 0,
+        "n_L4": 9,
+        "L4_rate_valid_calls": 0.03125,
+        "L4_rate_all_attempts_descriptive": 0.03125,
+        "error_count": 0,
+        "invalid_label_without_error": 0
+      },
+      {
+        "judge": "deepseek-chat",
+        "category": "A",
+        "attempts": 15,
+        "valid": 15,
+        "invalid": 0,
+        "n_L4": 0,
+        "L4_rate_valid_calls": 0.0,
+        "L4_rate_all_attempts_descriptive": 0.0,
+        "error_count": 0,
+        "invalid_label_without_error": 0
+      },
+      {
+        "judge": "deepseek-chat",
+        "category": "A_prime",
+        "attempts": 42,
+        "valid": 42,
+        "invalid": 0,
+        "n_L4": 0,
+        "L4_rate_valid_calls": 0.0,
+        "L4_rate_all_attempts_descriptive": 0.0,
+        "error_count": 0,
+        "invalid_label_without_error": 0
+      },
+      {
+        "judge": "deepseek-chat",
+        "category": "B",
+        "attempts": 60,
+        "valid": 60,
+        "invalid": 0,
+        "n_L4": 9,
+        "L4_rate_valid_calls": 0.15,
+        "L4_rate_all_attempts_descriptive": 0.15,
+        "error_count": 0,
+        "invalid_label_without_error": 0
+      },
+      {
+        "judge": "deepseek-chat",
+        "category": "C",
+        "attempts": 108,
+        "valid": 108,
+        "invalid": 0,
+        "n_L4": 0,
+        "L4_rate_valid_calls": 0.0,
+        "L4_rate_all_attempts_descriptive": 0.0,
+        "error_count": 0,
+        "invalid_label_without_error": 0
+      },
+      {
+        "judge": "deepseek-chat",
+        "category": "D",
+        "attempts": 63,
+        "valid": 63,
+        "invalid": 0,
+        "n_L4": 0,
+        "L4_rate_valid_calls": 0.0,
+        "L4_rate_all_attempts_descriptive": 0.0,
+        "error_count": 0,
+        "invalid_label_without_error": 0
+      },
+      {
+        "judge": "qwen3-max",
+        "category": "ALL",
+        "attempts": 288,
+        "valid": 287,
+        "invalid": 1,
+        "n_L4": 3,
+        "L4_rate_valid_calls": 0.010452961672473868,
+        "L4_rate_all_attempts_descriptive": 0.010416666666666666,
+        "error_count": 1,
+        "invalid_label_without_error": 0
+      },
+      {
+        "judge": "qwen3-max",
+        "category": "A",
+        "attempts": 15,
+        "valid": 15,
+        "invalid": 0,
+        "n_L4": 0,
+        "L4_rate_valid_calls": 0.0,
+        "L4_rate_all_attempts_descriptive": 0.0,
+        "error_count": 0,
+        "invalid_label_without_error": 0
+      },
+      {
+        "judge": "qwen3-max",
+        "category": "A_prime",
+        "attempts": 42,
+        "valid": 42,
+        "invalid": 0,
+        "n_L4": 0,
+        "L4_rate_valid_calls": 0.0,
+        "L4_rate_all_attempts_descriptive": 0.0,
+        "error_count": 0,
+        "invalid_label_without_error": 0
+      },
+      {
+        "judge": "qwen3-max",
+        "category": "B",
+        "attempts": 60,
+        "valid": 60,
+        "invalid": 0,
+        "n_L4": 3,
+        "L4_rate_valid_calls": 0.05,
+        "L4_rate_all_attempts_descriptive": 0.05,
+        "error_count": 0,
+        "invalid_label_without_error": 0
+      },
+      {
+        "judge": "qwen3-max",
+        "category": "C",
+        "attempts": 108,
+        "valid": 108,
+        "invalid": 0,
+        "n_L4": 0,
+        "L4_rate_valid_calls": 0.0,
+        "L4_rate_all_attempts_descriptive": 0.0,
+        "error_count": 0,
+        "invalid_label_without_error": 0
+      },
+      {
+        "judge": "qwen3-max",
+        "category": "D",
+        "attempts": 63,
+        "valid": 62,
+        "invalid": 1,
+        "n_L4": 0,
+        "L4_rate_valid_calls": 0.0,
+        "L4_rate_all_attempts_descriptive": 0.0,
+        "error_count": 1,
+        "invalid_label_without_error": 0
+      },
+      {
+        "judge": "glm-4.6",
+        "category": "ALL",
+        "attempts": 288,
+        "valid": 272,
+        "invalid": 16,
+        "n_L4": 6,
+        "L4_rate_valid_calls": 0.022058823529411766,
+        "L4_rate_all_attempts_descriptive": 0.020833333333333332,
+        "error_count": 16,
+        "invalid_label_without_error": 0
+      },
+      {
+        "judge": "glm-4.6",
+        "category": "A",
+        "attempts": 15,
+        "valid": 15,
+        "invalid": 0,
+        "n_L4": 0,
+        "L4_rate_valid_calls": 0.0,
+        "L4_rate_all_attempts_descriptive": 0.0,
+        "error_count": 0,
+        "invalid_label_without_error": 0
+      },
+      {
+        "judge": "glm-4.6",
+        "category": "A_prime",
+        "attempts": 42,
+        "valid": 39,
+        "invalid": 3,
+        "n_L4": 0,
+        "L4_rate_valid_calls": 0.0,
+        "L4_rate_all_attempts_descriptive": 0.0,
+        "error_count": 3,
+        "invalid_label_without_error": 0
+      },
+      {
+        "judge": "glm-4.6",
+        "category": "B",
+        "attempts": 60,
+        "valid": 55,
+        "invalid": 5,
+        "n_L4": 6,
+        "L4_rate_valid_calls": 0.10909090909090909,
+        "L4_rate_all_attempts_descriptive": 0.1,
+        "error_count": 5,
+        "invalid_label_without_error": 0
+      },
+      {
+        "judge": "glm-4.6",
+        "category": "C",
+        "attempts": 108,
+        "valid": 104,
+        "invalid": 4,
+        "n_L4": 0,
+        "L4_rate_valid_calls": 0.0,
+        "L4_rate_all_attempts_descriptive": 0.0,
+        "error_count": 4,
+        "invalid_label_without_error": 0
+      },
+      {
+        "judge": "glm-4.6",
+        "category": "D",
+        "attempts": 63,
+        "valid": 59,
+        "invalid": 4,
+        "n_L4": 0,
+        "L4_rate_valid_calls": 0.0,
+        "L4_rate_all_attempts_descriptive": 0.0,
+        "error_count": 4,
+        "invalid_label_without_error": 0
+      }
+    ],
+    "replicate_consistency": {
+      "deepseek-chat": {
+        "evaluable_cells": 96,
+        "unanimous_cells": 94
+      },
+      "qwen3-max": {
+        "evaluable_cells": 96,
+        "unanimous_cells": 90
+      },
+      "glm-4.6": {
+        "evaluable_cells": 91,
+        "unanimous_cells": 82
+      }
+    }
+  },
+  "systems": {
+    "aggregation": "One unique modal prediction per pair (S6: three calls; S2/S5: one calibrated frozen score). Panel ties excluded. Unresolved system modes reported explicitly and excluded from evaluable denominator; failure-counting sensitivity supplied.",
+    "identity_file_input_mapping": {
+      "S2_wulff_mata": {
+        "file": "query_wulff_mata_v1.6.json",
+        "records": 96,
+        "pairs": 96,
+        "input_fields": [
+          "label",
+          "definition",
+          "items_sample"
+        ],
+        "raw_payload_counts": {
+          "embed_backend": {
+            "bge-m3": 96
+          },
+          "embed_model": {
+            "BAAI/bge-m3": 96
+          },
+          "text_variant": {
+            "not-recorded": 96
+          }
+        },
+        "input_rule_evidence": "query_wulff_mata.evaluate_pair -> common.pair_text_for_embedding: newline-joined label, definition, optional pipe-joined items; no discipline field",
+        "reconstructed_input_length_mismatches": []
+      },
+      "S5_generic_embed": {
+        "file": "query_generic_embedding_v1.6.json",
+        "records": 96,
+        "pairs": 96,
+        "input_fields": [
+          "label",
+          "definition"
+        ],
+        "raw_payload_counts": {
+          "embed_backend": {
+            "bge-m3": 96
+          },
+          "embed_model": {
+            "BAAI/bge-m3": 96
+          },
+          "text_variant": {
+            "label+definition": 96
+          }
+        },
+        "input_rule_evidence": "query_generic_embedding._text: newline-joined label and definition, explicitly excludes items and discipline"
+      },
+      "S6_llm_direct": {
+        "file": "S6_kimi_direct_v1.6.json",
+        "records": 288,
+        "pairs": 96,
+        "input_fields": [
+          "label",
+          "discipline",
+          "definition",
+          "items_sample"
+        ],
+        "raw_payload_counts": {
+          "backend": {
+            "kimi": 288
+          },
+          "model": {
+            "moonshot-v1-32k": 288
+          },
+          "prompt_mode": {
+            "direct": 288
+          }
+        },
+        "input_rule_evidence": "query_llm_direct.S6_DIRECT_USER_TEMPLATE and _format_user_prompt: label, discipline, definition, and items for both constructs"
+      }
+    },
+    "primary_noncontrol_agreement": [
+      {
+        "system": "S2_wulff_mata",
+        "category": "NONCONTROLS",
+        "n_pairs": 75,
+        "reporting_role": "primary",
+        "n_panel_ties_excluded": 2,
+        "n_panel_missing_excluded": 0,
+        "n_system_unresolved": 0,
+        "n_evaluable_pairs": 73,
+        "n_agree": 14,
+        "pair_majority_agreement": 0.1917808219178082,
+        "agreement_if_system_unresolved_is_failure": 0.1917808219178082
+      },
+      {
+        "system": "S5_generic_embed",
+        "category": "NONCONTROLS",
+        "n_pairs": 75,
+        "reporting_role": "primary",
+        "n_panel_ties_excluded": 2,
+        "n_panel_missing_excluded": 0,
+        "n_system_unresolved": 0,
+        "n_evaluable_pairs": 73,
+        "n_agree": 12,
+        "pair_majority_agreement": 0.1643835616438356,
+        "agreement_if_system_unresolved_is_failure": 0.1643835616438356
+      },
+      {
+        "system": "S6_llm_direct",
+        "category": "NONCONTROLS",
+        "n_pairs": 75,
+        "reporting_role": "primary",
+        "n_panel_ties_excluded": 2,
+        "n_panel_missing_excluded": 0,
+        "n_system_unresolved": 0,
+        "n_evaluable_pairs": 73,
+        "n_agree": 39,
+        "pair_majority_agreement": 0.5342465753424658,
+        "agreement_if_system_unresolved_is_failure": 0.5342465753424658
+      }
+    ],
+    "secondary_all_pair_agreement": [
+      {
+        "system": "S2_wulff_mata",
+        "category": "ALL",
+        "n_pairs": 96,
+        "reporting_role": "secondary_includes_calibration_controls",
+        "n_panel_ties_excluded": 2,
+        "n_panel_missing_excluded": 0,
+        "n_system_unresolved": 0,
+        "n_evaluable_pairs": 94,
+        "n_agree": 27,
+        "pair_majority_agreement": 0.2872340425531915,
+        "agreement_if_system_unresolved_is_failure": 0.2872340425531915
+      },
+      {
+        "system": "S5_generic_embed",
+        "category": "ALL",
+        "n_pairs": 96,
+        "reporting_role": "secondary_includes_calibration_controls",
+        "n_panel_ties_excluded": 2,
+        "n_panel_missing_excluded": 0,
+        "n_system_unresolved": 0,
+        "n_evaluable_pairs": 94,
+        "n_agree": 25,
+        "pair_majority_agreement": 0.26595744680851063,
+        "agreement_if_system_unresolved_is_failure": 0.26595744680851063
+      },
+      {
+        "system": "S6_llm_direct",
+        "category": "ALL",
+        "n_pairs": 96,
+        "reporting_role": "secondary_includes_calibration_controls",
+        "n_panel_ties_excluded": 2,
+        "n_panel_missing_excluded": 0,
+        "n_system_unresolved": 0,
+        "n_evaluable_pairs": 94,
+        "n_agree": 57,
+        "pair_majority_agreement": 0.6063829787234043,
+        "agreement_if_system_unresolved_is_failure": 0.6063829787234043
+      }
+    ],
+    "prompt_input_evidence": {
+      "source_available": true,
+      "USER_TEMPLATE": {
+        "line": 150,
+        "both_construct_fields": [
+          "label",
+          "discipline",
+          "definition",
+          "items"
+        ]
+      },
+      "S6_DIRECT_USER_TEMPLATE": {
+        "line": 172,
+        "both_construct_fields": [
+          "label",
+          "discipline",
+          "definition",
+          "items"
+        ]
+      },
+      "formatting": "_format_user_prompt fills items from items_sample, separated by ' | ', or '(none provided)' when empty. Both source templates include all four fields; no new prompts were run.",
+      "frozen_S6_payload_counts": {
+        "backend": {
+          "kimi": 288
+        },
+        "model": {
+          "moonshot-v1-32k": 288
+        },
+        "prompt_mode": {
+          "direct": 288
+        }
+      }
+    },
+    "call_level_L4_rates": [
+      {
+        "system": "S2_wulff_mata",
+        "category": "ALL",
+        "n_records": 96,
+        "n_native_label_calls": 0,
+        "n_native_L4": 0,
+        "native_call_L4_rate": null,
+        "n_usable_native_or_derived_labels": 96,
+        "n_native_or_derived_L4": 7,
+        "native_or_derived_L4_rate": 0.07291666666666667,
+        "label_origin": "offline calibrated scalar scores; raw file has no emitted labels"
+      },
+      {
+        "system": "S2_wulff_mata",
+        "category": "A",
+        "n_records": 5,
+        "n_native_label_calls": 0,
+        "n_native_L4": 0,
+        "native_call_L4_rate": null,
+        "n_usable_native_or_derived_labels": 5,
+        "n_native_or_derived_L4": 1,
+        "native_or_derived_L4_rate": 0.2,
+        "label_origin": "offline calibrated scalar scores; raw file has no emitted labels"
+      },
+      {
+        "system": "S2_wulff_mata",
+        "category": "A_prime",
+        "n_records": 14,
+        "n_native_label_calls": 0,
+        "n_native_L4": 0,
+        "native_call_L4_rate": null,
+        "n_usable_native_or_derived_labels": 14,
+        "n_native_or_derived_L4": 0,
+        "native_or_derived_L4_rate": 0.0,
+        "label_origin": "offline calibrated scalar scores; raw file has no emitted labels"
+      },
+      {
+        "system": "S2_wulff_mata",
+        "category": "B",
+        "n_records": 20,
+        "n_native_label_calls": 0,
+        "n_native_L4": 0,
+        "native_call_L4_rate": null,
+        "n_usable_native_or_derived_labels": 20,
+        "n_native_or_derived_L4": 0,
+        "native_or_derived_L4_rate": 0.0,
+        "label_origin": "offline calibrated scalar scores; raw file has no emitted labels"
+      },
+      {
+        "system": "S2_wulff_mata",
+        "category": "C",
+        "n_records": 36,
+        "n_native_label_calls": 0,
+        "n_native_L4": 0,
+        "native_call_L4_rate": null,
+        "n_usable_native_or_derived_labels": 36,
+        "n_native_or_derived_L4": 0,
+        "native_or_derived_L4_rate": 0.0,
+        "label_origin": "offline calibrated scalar scores; raw file has no emitted labels"
+      },
+      {
+        "system": "S2_wulff_mata",
+        "category": "D",
+        "n_records": 21,
+        "n_native_label_calls": 0,
+        "n_native_L4": 0,
+        "native_call_L4_rate": null,
+        "n_usable_native_or_derived_labels": 21,
+        "n_native_or_derived_L4": 6,
+        "native_or_derived_L4_rate": 0.2857142857142857,
+        "label_origin": "offline calibrated scalar scores; raw file has no emitted labels"
+      },
+      {
+        "system": "S2_wulff_mata",
+        "category": "NONCONTROLS",
+        "n_records": 75,
+        "n_native_label_calls": 0,
+        "n_native_L4": 0,
+        "native_call_L4_rate": null,
+        "n_usable_native_or_derived_labels": 75,
+        "n_native_or_derived_L4": 1,
+        "native_or_derived_L4_rate": 0.013333333333333334,
+        "label_origin": "offline calibrated scalar scores; raw file has no emitted labels"
+      },
+      {
+        "system": "S5_generic_embed",
+        "category": "ALL",
+        "n_records": 96,
+        "n_native_label_calls": 0,
+        "n_native_L4": 0,
+        "native_call_L4_rate": null,
+        "n_usable_native_or_derived_labels": 96,
+        "n_native_or_derived_L4": 8,
+        "native_or_derived_L4_rate": 0.08333333333333333,
+        "label_origin": "offline calibrated scalar scores; raw file has no emitted labels"
+      },
+      {
+        "system": "S5_generic_embed",
+        "category": "A",
+        "n_records": 5,
+        "n_native_label_calls": 0,
+        "n_native_L4": 0,
+        "native_call_L4_rate": null,
+        "n_usable_native_or_derived_labels": 5,
+        "n_native_or_derived_L4": 1,
+        "native_or_derived_L4_rate": 0.2,
+        "label_origin": "offline calibrated scalar scores; raw file has no emitted labels"
+      },
+      {
+        "system": "S5_generic_embed",
+        "category": "A_prime",
+        "n_records": 14,
+        "n_native_label_calls": 0,
+        "n_native_L4": 0,
+        "native_call_L4_rate": null,
+        "n_usable_native_or_derived_labels": 14,
+        "n_native_or_derived_L4": 0,
+        "native_or_derived_L4_rate": 0.0,
+        "label_origin": "offline calibrated scalar scores; raw file has no emitted labels"
+      },
+      {
+        "system": "S5_generic_embed",
+        "category": "B",
+        "n_records": 20,
+        "n_native_label_calls": 0,
+        "n_native_L4": 0,
+        "native_call_L4_rate": null,
+        "n_usable_native_or_derived_labels": 20,
+        "n_native_or_derived_L4": 1,
+        "native_or_derived_L4_rate": 0.05,
+        "label_origin": "offline calibrated scalar scores; raw file has no emitted labels"
+      },
+      {
+        "system": "S5_generic_embed",
+        "category": "C",
+        "n_records": 36,
+        "n_native_label_calls": 0,
+        "n_native_L4": 0,
+        "native_call_L4_rate": null,
+        "n_usable_native_or_derived_labels": 36,
+        "n_native_or_derived_L4": 0,
+        "native_or_derived_L4_rate": 0.0,
+        "label_origin": "offline calibrated scalar scores; raw file has no emitted labels"
+      },
+      {
+        "system": "S5_generic_embed",
+        "category": "D",
+        "n_records": 21,
+        "n_native_label_calls": 0,
+        "n_native_L4": 0,
+        "native_call_L4_rate": null,
+        "n_usable_native_or_derived_labels": 21,
+        "n_native_or_derived_L4": 6,
+        "native_or_derived_L4_rate": 0.2857142857142857,
+        "label_origin": "offline calibrated scalar scores; raw file has no emitted labels"
+      },
+      {
+        "system": "S5_generic_embed",
+        "category": "NONCONTROLS",
+        "n_records": 75,
+        "n_native_label_calls": 0,
+        "n_native_L4": 0,
+        "native_call_L4_rate": null,
+        "n_usable_native_or_derived_labels": 75,
+        "n_native_or_derived_L4": 2,
+        "native_or_derived_L4_rate": 0.02666666666666667,
+        "label_origin": "offline calibrated scalar scores; raw file has no emitted labels"
+      },
+      {
+        "system": "S6_llm_direct",
+        "category": "ALL",
+        "n_records": 288,
+        "n_native_label_calls": 288,
+        "n_native_L4": 52,
+        "native_call_L4_rate": 0.18055555555555555,
+        "n_usable_native_or_derived_labels": 288,
+        "n_native_or_derived_L4": 52,
+        "native_or_derived_L4_rate": 0.18055555555555555,
+        "label_origin": "native LLM labels"
+      },
+      {
+        "system": "S6_llm_direct",
+        "category": "A",
+        "n_records": 15,
+        "n_native_label_calls": 15,
+        "n_native_L4": 4,
+        "native_call_L4_rate": 0.26666666666666666,
+        "n_usable_native_or_derived_labels": 15,
+        "n_native_or_derived_L4": 4,
+        "native_or_derived_L4_rate": 0.26666666666666666,
+        "label_origin": "native LLM labels"
+      },
+      {
+        "system": "S6_llm_direct",
+        "category": "A_prime",
+        "n_records": 42,
+        "n_native_label_calls": 42,
+        "n_native_L4": 0,
+        "native_call_L4_rate": 0.0,
+        "n_usable_native_or_derived_labels": 42,
+        "n_native_or_derived_L4": 0,
+        "native_or_derived_L4_rate": 0.0,
+        "label_origin": "native LLM labels"
+      },
+      {
+        "system": "S6_llm_direct",
+        "category": "B",
+        "n_records": 60,
+        "n_native_label_calls": 60,
+        "n_native_L4": 36,
+        "native_call_L4_rate": 0.6,
+        "n_usable_native_or_derived_labels": 60,
+        "n_native_or_derived_L4": 36,
+        "native_or_derived_L4_rate": 0.6,
+        "label_origin": "native LLM labels"
+      },
+      {
+        "system": "S6_llm_direct",
+        "category": "C",
+        "n_records": 108,
+        "n_native_label_calls": 108,
+        "n_native_L4": 12,
+        "native_call_L4_rate": 0.1111111111111111,
+        "n_usable_native_or_derived_labels": 108,
+        "n_native_or_derived_L4": 12,
+        "native_or_derived_L4_rate": 0.1111111111111111,
+        "label_origin": "native LLM labels"
+      },
+      {
+        "system": "S6_llm_direct",
+        "category": "D",
+        "n_records": 63,
+        "n_native_label_calls": 63,
+        "n_native_L4": 0,
+        "native_call_L4_rate": 0.0,
+        "n_usable_native_or_derived_labels": 63,
+        "n_native_or_derived_L4": 0,
+        "native_or_derived_L4_rate": 0.0,
+        "label_origin": "native LLM labels"
+      },
+      {
+        "system": "S6_llm_direct",
+        "category": "NONCONTROLS",
+        "n_records": 225,
+        "n_native_label_calls": 225,
+        "n_native_L4": 52,
+        "native_call_L4_rate": 0.2311111111111111,
+        "n_usable_native_or_derived_labels": 225,
+        "n_native_or_derived_L4": 52,
+        "native_or_derived_L4_rate": 0.2311111111111111,
+        "label_origin": "native LLM labels"
+      }
+    ],
+    "calibration": {
+      "S2_wulff_mata": {
+        "thresholds": {
+          "L1_min": 0.9315401923656463,
+          "L2_min": 0.8498754426836967,
+          "L3_min": 0.7682106930017472
+        },
+        "n_D_L1": 15,
+        "n_D_L4": 6,
+        "method": "Archived common.py rule: upper order-statistic median (including even n), margin 0.03, fitted on designed D control labels before panel scoring. No tuning in this reanalysis.",
+        "same_upper_median": 0.9615401923656464,
+        "different_upper_median": 0.7382106930017471,
+        "fallback": null
+      },
+      "S5_generic_embed": {
+        "thresholds": {
+          "L1_min": 0.9219229531288147,
+          "L2_min": 0.8453470766544342,
+          "L3_min": 0.7687712001800537
+        },
+        "n_D_L1": 15,
+        "n_D_L4": 6,
+        "method": "Archived common.py rule: upper order-statistic median (including even n), margin 0.03, fitted on designed D control labels before panel scoring. No tuning in this reanalysis.",
+        "same_upper_median": 0.9519229531288147,
+        "different_upper_median": 0.7387712001800537,
+        "fallback": null
+      }
+    },
+    "pair_majority_agreement": [
+      {
+        "system": "S2_wulff_mata",
+        "category": "ALL",
+        "n_pairs": 96,
+        "reporting_role": "secondary_includes_calibration_controls",
+        "n_panel_ties_excluded": 2,
+        "n_panel_missing_excluded": 0,
+        "n_system_unresolved": 0,
+        "n_evaluable_pairs": 94,
+        "n_agree": 27,
+        "pair_majority_agreement": 0.2872340425531915,
+        "agreement_if_system_unresolved_is_failure": 0.2872340425531915
+      },
+      {
+        "system": "S2_wulff_mata",
+        "category": "A",
+        "n_pairs": 5,
+        "reporting_role": "category_descriptive",
+        "n_panel_ties_excluded": 1,
+        "n_panel_missing_excluded": 0,
+        "n_system_unresolved": 0,
+        "n_evaluable_pairs": 4,
+        "n_agree": 1,
+        "pair_majority_agreement": 0.25,
+        "agreement_if_system_unresolved_is_failure": 0.25
+      },
+      {
+        "system": "S2_wulff_mata",
+        "category": "A_prime",
+        "n_pairs": 14,
+        "reporting_role": "category_descriptive",
+        "n_panel_ties_excluded": 0,
+        "n_panel_missing_excluded": 0,
+        "n_system_unresolved": 0,
+        "n_evaluable_pairs": 14,
+        "n_agree": 0,
+        "pair_majority_agreement": 0.0,
+        "agreement_if_system_unresolved_is_failure": 0.0
+      },
+      {
+        "system": "S2_wulff_mata",
+        "category": "B",
+        "n_pairs": 20,
+        "reporting_role": "category_descriptive",
+        "n_panel_ties_excluded": 1,
+        "n_panel_missing_excluded": 0,
+        "n_system_unresolved": 0,
+        "n_evaluable_pairs": 19,
+        "n_agree": 4,
+        "pair_majority_agreement": 0.21052631578947367,
+        "agreement_if_system_unresolved_is_failure": 0.21052631578947367
+      },
+      {
+        "system": "S2_wulff_mata",
+        "category": "C",
+        "n_pairs": 36,
+        "reporting_role": "category_descriptive",
+        "n_panel_ties_excluded": 0,
+        "n_panel_missing_excluded": 0,
+        "n_system_unresolved": 0,
+        "n_evaluable_pairs": 36,
+        "n_agree": 9,
+        "pair_majority_agreement": 0.25,
+        "agreement_if_system_unresolved_is_failure": 0.25
+      },
+      {
+        "system": "S2_wulff_mata",
+        "category": "D",
+        "n_pairs": 21,
+        "reporting_role": "category_descriptive",
+        "n_panel_ties_excluded": 0,
+        "n_panel_missing_excluded": 0,
+        "n_system_unresolved": 0,
+        "n_evaluable_pairs": 21,
+        "n_agree": 13,
+        "pair_majority_agreement": 0.6190476190476191,
+        "agreement_if_system_unresolved_is_failure": 0.6190476190476191
+      },
+      {
+        "system": "S2_wulff_mata",
+        "category": "NONCONTROLS",
+        "n_pairs": 75,
+        "reporting_role": "primary",
+        "n_panel_ties_excluded": 2,
+        "n_panel_missing_excluded": 0,
+        "n_system_unresolved": 0,
+        "n_evaluable_pairs": 73,
+        "n_agree": 14,
+        "pair_majority_agreement": 0.1917808219178082,
+        "agreement_if_system_unresolved_is_failure": 0.1917808219178082
+      },
+      {
+        "system": "S5_generic_embed",
+        "category": "ALL",
+        "n_pairs": 96,
+        "reporting_role": "secondary_includes_calibration_controls",
+        "n_panel_ties_excluded": 2,
+        "n_panel_missing_excluded": 0,
+        "n_system_unresolved": 0,
+        "n_evaluable_pairs": 94,
+        "n_agree": 25,
+        "pair_majority_agreement": 0.26595744680851063,
+        "agreement_if_system_unresolved_is_failure": 0.26595744680851063
+      },
+      {
+        "system": "S5_generic_embed",
+        "category": "A",
+        "n_pairs": 5,
+        "reporting_role": "category_descriptive",
+        "n_panel_ties_excluded": 1,
+        "n_panel_missing_excluded": 0,
+        "n_system_unresolved": 0,
+        "n_evaluable_pairs": 4,
+        "n_agree": 1,
+        "pair_majority_agreement": 0.25,
+        "agreement_if_system_unresolved_is_failure": 0.25
+      },
+      {
+        "system": "S5_generic_embed",
+        "category": "A_prime",
+        "n_pairs": 14,
+        "reporting_role": "category_descriptive",
+        "n_panel_ties_excluded": 0,
+        "n_panel_missing_excluded": 0,
+        "n_system_unresolved": 0,
+        "n_evaluable_pairs": 14,
+        "n_agree": 0,
+        "pair_majority_agreement": 0.0,
+        "agreement_if_system_unresolved_is_failure": 0.0
+      },
+      {
+        "system": "S5_generic_embed",
+        "category": "B",
+        "n_pairs": 20,
+        "reporting_role": "category_descriptive",
+        "n_panel_ties_excluded": 1,
+        "n_panel_missing_excluded": 0,
+        "n_system_unresolved": 0,
+        "n_evaluable_pairs": 19,
+        "n_agree": 4,
+        "pair_majority_agreement": 0.21052631578947367,
+        "agreement_if_system_unresolved_is_failure": 0.21052631578947367
+      },
+      {
+        "system": "S5_generic_embed",
+        "category": "C",
+        "n_pairs": 36,
+        "reporting_role": "category_descriptive",
+        "n_panel_ties_excluded": 0,
+        "n_panel_missing_excluded": 0,
+        "n_system_unresolved": 0,
+        "n_evaluable_pairs": 36,
+        "n_agree": 7,
+        "pair_majority_agreement": 0.19444444444444445,
+        "agreement_if_system_unresolved_is_failure": 0.19444444444444445
+      },
+      {
+        "system": "S5_generic_embed",
+        "category": "D",
+        "n_pairs": 21,
+        "reporting_role": "category_descriptive",
+        "n_panel_ties_excluded": 0,
+        "n_panel_missing_excluded": 0,
+        "n_system_unresolved": 0,
+        "n_evaluable_pairs": 21,
+        "n_agree": 13,
+        "pair_majority_agreement": 0.6190476190476191,
+        "agreement_if_system_unresolved_is_failure": 0.6190476190476191
+      },
+      {
+        "system": "S5_generic_embed",
+        "category": "NONCONTROLS",
+        "n_pairs": 75,
+        "reporting_role": "primary",
+        "n_panel_ties_excluded": 2,
+        "n_panel_missing_excluded": 0,
+        "n_system_unresolved": 0,
+        "n_evaluable_pairs": 73,
+        "n_agree": 12,
+        "pair_majority_agreement": 0.1643835616438356,
+        "agreement_if_system_unresolved_is_failure": 0.1643835616438356
+      },
+      {
+        "system": "S6_llm_direct",
+        "category": "ALL",
+        "n_pairs": 96,
+        "reporting_role": "secondary_includes_calibration_controls",
+        "n_panel_ties_excluded": 2,
+        "n_panel_missing_excluded": 0,
+        "n_system_unresolved": 0,
+        "n_evaluable_pairs": 94,
+        "n_agree": 57,
+        "pair_majority_agreement": 0.6063829787234043,
+        "agreement_if_system_unresolved_is_failure": 0.6063829787234043
+      },
+      {
+        "system": "S6_llm_direct",
+        "category": "A",
+        "n_pairs": 5,
+        "reporting_role": "category_descriptive",
+        "n_panel_ties_excluded": 1,
+        "n_panel_missing_excluded": 0,
+        "n_system_unresolved": 0,
+        "n_evaluable_pairs": 4,
+        "n_agree": 0,
+        "pair_majority_agreement": 0.0,
+        "agreement_if_system_unresolved_is_failure": 0.0
+      },
+      {
+        "system": "S6_llm_direct",
+        "category": "A_prime",
+        "n_pairs": 14,
+        "reporting_role": "category_descriptive",
+        "n_panel_ties_excluded": 0,
+        "n_panel_missing_excluded": 0,
+        "n_system_unresolved": 0,
+        "n_evaluable_pairs": 14,
+        "n_agree": 10,
+        "pair_majority_agreement": 0.7142857142857143,
+        "agreement_if_system_unresolved_is_failure": 0.7142857142857143
+      },
+      {
+        "system": "S6_llm_direct",
+        "category": "B",
+        "n_pairs": 20,
+        "reporting_role": "category_descriptive",
+        "n_panel_ties_excluded": 1,
+        "n_panel_missing_excluded": 0,
+        "n_system_unresolved": 0,
+        "n_evaluable_pairs": 19,
+        "n_agree": 3,
+        "pair_majority_agreement": 0.15789473684210525,
+        "agreement_if_system_unresolved_is_failure": 0.15789473684210525
+      },
+      {
+        "system": "S6_llm_direct",
+        "category": "C",
+        "n_pairs": 36,
+        "reporting_role": "category_descriptive",
+        "n_panel_ties_excluded": 0,
+        "n_panel_missing_excluded": 0,
+        "n_system_unresolved": 0,
+        "n_evaluable_pairs": 36,
+        "n_agree": 26,
+        "pair_majority_agreement": 0.7222222222222222,
+        "agreement_if_system_unresolved_is_failure": 0.7222222222222222
+      },
+      {
+        "system": "S6_llm_direct",
+        "category": "D",
+        "n_pairs": 21,
+        "reporting_role": "category_descriptive",
+        "n_panel_ties_excluded": 0,
+        "n_panel_missing_excluded": 0,
+        "n_system_unresolved": 0,
+        "n_evaluable_pairs": 21,
+        "n_agree": 18,
+        "pair_majority_agreement": 0.8571428571428571,
+        "agreement_if_system_unresolved_is_failure": 0.8571428571428571
+      },
+      {
+        "system": "S6_llm_direct",
+        "category": "NONCONTROLS",
+        "n_pairs": 75,
+        "reporting_role": "primary",
+        "n_panel_ties_excluded": 2,
+        "n_panel_missing_excluded": 0,
+        "n_system_unresolved": 0,
+        "n_evaluable_pairs": 73,
+        "n_agree": 39,
+        "pair_majority_agreement": 0.5342465753424658,
+        "agreement_if_system_unresolved_is_failure": 0.5342465753424658
+      }
+    ],
+    "limitations": "S2 and S5 use BGE-M3 frozen approximations, not independent model families. Their archived scalar mapping cannot emit L3 or L6. D controls calibrate thresholds and are reused in the ALL score; NONCONTROLS is reported separately. Panel agreement is not validated accuracy. No raw outputs for S1/S3/S4 are in this bounded input set."
+  },
+  "Q6": {
+    "method": "Exact two-sided matched-pair McNemar, S6 vs S2 and S6 vs S5, restricted to reconstructed panel L3; one modal prediction per pair. Holm over exactly two tests: cumulative maximum of sorted (m-rank)*p, capped at 1.",
+    "comparisons": {
+      "S6_vs_S2": {
+        "n_pairs": 29,
+        "n00": 14,
+        "n01": 0,
+        "n10": 15,
+        "n11": 0,
+        "discordant_pairs": 15,
+        "p_exact_two_sided": 6.103515625e-05,
+        "matched_pair_ids": [
+          "A'.01",
+          "A'.02",
+          "A'.03",
+          "A'.04",
+          "A'.05",
+          "A'.06",
+          "A'.07",
+          "A'.08",
+          "A'.09",
+          "A'.10",
+          "A'.13",
+          "A'.14",
+          "A'.15",
+          "A'.16",
+          "A.04",
+          "A.06",
+          "B.01",
+          "B.04",
+          "B.07",
+          "B.10",
+          "B.23",
+          "C.01",
+          "C.04",
+          "C.05",
+          "C.06",
+          "C.11",
+          "C.14",
+          "C.23",
+          "C.32"
+        ],
+        "s6_agreements": 15,
+        "other_agreements": 0,
+        "agreement_difference": 0.5172413793103449,
+        "p_holm": 0.0001220703125
+      },
+      "S6_vs_S5": {
+        "n_pairs": 29,
+        "n00": 14,
+        "n01": 0,
+        "n10": 15,
+        "n11": 0,
+        "discordant_pairs": 15,
+        "p_exact_two_sided": 6.103515625e-05,
+        "matched_pair_ids": [
+          "A'.01",
+          "A'.02",
+          "A'.03",
+          "A'.04",
+          "A'.05",
+          "A'.06",
+          "A'.07",
+          "A'.08",
+          "A'.09",
+          "A'.10",
+          "A'.13",
+          "A'.14",
+          "A'.15",
+          "A'.16",
+          "A.04",
+          "A.06",
+          "B.01",
+          "B.04",
+          "B.07",
+          "B.10",
+          "B.23",
+          "C.01",
+          "C.04",
+          "C.05",
+          "C.06",
+          "C.11",
+          "C.14",
+          "C.23",
+          "C.32"
+        ],
+        "s6_agreements": 15,
+        "other_agreements": 0,
+        "agreement_difference": 0.5172413793103449,
+        "p_holm": 0.0001220703125
+      }
+    },
+    "limitation": "The two scalar baselines cannot emit L3 under the archived mapping. A significant difference therefore includes a structural output-space advantage; it does not isolate hierarchy reasoning."
+  },
+  "Q7": {
+    "method": "Difference in mean per-pair Shannon first-YES entropy (A_prime minus comparator), in bits. Randomly assign the A_prime membership across whole pairs at its fixed size, equivalent for this statistic to shuffling all category labels preserving category sizes. Monte Carlo p=(exceedances+1)/(B+1); exact enumeration used only if all allocations fit the budget.",
+    "primary_direction": "A_prime has GREATER entropy than all non-A_prime pairs (one-sided upper tail).",
+    "sensitivity": "Remove D calibration/control pairs: A_prime vs A+B+C. Raw label-vote entropy repeats the calculation as a measurement sensitivity. judge_modal_entropy_bits uses one available untied modal label per judge to remove replicate weighting. Lower-tail and absolute two-sided p-values are exploratory, not the pre-stated directional Q7.",
+    "limitation": "Permutation reference assumes exchangeable pair category assignments; these categories are designed, not randomized. Resample entire pairs, never individual calls. No block by construct identity is available in this analysis, so reused constructs may violate pair independence. Failure of the greater-entropy prediction is not an equivalence test or proof of stability.",
+    "results": {
+      "first_yes_entropy_all": {
+        "n_a_prime": 14,
+        "n_comparator": 82,
+        "mean_a_prime": 0.06559255957532069,
+        "mean_comparator": 0.3657118659418053,
+        "observed_difference_bits": -0.30011930636648465,
+        "p_greater_primary": 0.9962,
+        "p_less_exploratory": 0.0085,
+        "p_two_sided_exploratory": 0.02296,
+        "null_mean": 0.0011058666624323304,
+        "null_sd": 0.13107119348215418,
+        "permutations": 49999,
+        "exact_enumeration": false,
+        "seed": 20260914,
+        "upper_tail_exceedances": 49809,
+        "lower_tail_exceedances": 424,
+        "two_sided_exceedances": 1147,
+        "monte_carlo_add_one": true,
+        "primary_mc_standard_error_approx": 0.00027515668263736664,
+        "per_category_mean_entropy_bits": {
+          "A": 0.576427434382175,
+          "A_prime": 0.06559255957532069,
+          "B": 0.684208968595349,
+          "C": 0.372834901761394,
+          "D": 0.0
+        },
+        "a_prime_rank_descending": 4,
+        "pair_ids": [
+          "A'.01",
+          "A'.02",
+          "A'.03",
+          "A'.04",
+          "A'.05",
+          "A'.06",
+          "A'.07",
+          "A'.08",
+          "A'.09",
+          "A'.10",
+          "A'.13",
+          "A'.14",
+          "A'.15",
+          "A'.16",
+          "A.01",
+          "A.02",
+          "A.03",
+          "A.04",
+          "A.06",
+          "B.01",
+          "B.02",
+          "B.04",
+          "B.05",
+          "B.06",
+          "B.07",
+          "B.08",
+          "B.09",
+          "B.10",
+          "B.11",
+          "B.12",
+          "B.13",
+          "B.14",
+          "B.15",
+          "B.16",
+          "B.18",
+          "B.19",
+          "B.20",
+          "B.23",
+          "B.24",
+          "C.01",
+          "C.02",
+          "C.03",
+          "C.04",
+          "C.05",
+          "C.06",
+          "C.07",
+          "C.08",
+          "C.09",
+          "C.10",
+          "C.11",
+          "C.12",
+          "C.13",
+          "C.14",
+          "C.15",
+          "C.16",
+          "C.17",
+          "C.18",
+          "C.19",
+          "C.20",
+          "C.21",
+          "C.22",
+          "C.23",
+          "C.24",
+          "C.25",
+          "C.26",
+          "C.27",
+          "C.28",
+          "C.29",
+          "C.30",
+          "C.31",
+          "C.32",
+          "C.33",
+          "C.34",
+          "C.35",
+          "C.36",
+          "D.01",
+          "D.02",
+          "D.03",
+          "D.04",
+          "D.05",
+          "D.06",
+          "D.07",
+          "D.08",
+          "D.09",
+          "D.10",
+          "D.11",
+          "D.12",
+          "D.13",
+          "D.14",
+          "D.15",
+          "D.16",
+          "D.19",
+          "D.21",
+          "D.23",
+          "D.24",
+          "D.25"
+        ]
+      },
+      "first_yes_entropy_noncontrols": {
+        "n_a_prime": 14,
+        "n_comparator": 61,
+        "mean_a_prime": 0.06559255957532069,
+        "mean_comparator": 0.49161267224963995,
+        "observed_difference_bits": -0.4260201126743193,
+        "p_greater_primary": 0.99982,
+        "p_less_exploratory": 0.00048,
+        "p_two_sided_exploratory": 0.00182,
+        "null_mean": 0.0007268613754769612,
+        "null_sd": 0.14135859156931765,
+        "permutations": 49999,
+        "exact_enumeration": false,
+        "seed": 20260914,
+        "upper_tail_exceedances": 49990,
+        "lower_tail_exceedances": 23,
+        "two_sided_exceedances": 90,
+        "monte_carlo_add_one": true,
+        "primary_mc_standard_error_approx": 5.9994599756971126e-05,
+        "per_category_mean_entropy_bits": {
+          "A": 0.576427434382175,
+          "A_prime": 0.06559255957532069,
+          "B": 0.684208968595349,
+          "C": 0.372834901761394
+        },
+        "a_prime_rank_descending": 4,
+        "pair_ids": [
+          "A'.01",
+          "A'.02",
+          "A'.03",
+          "A'.04",
+          "A'.05",
+          "A'.06",
+          "A'.07",
+          "A'.08",
+          "A'.09",
+          "A'.10",
+          "A'.13",
+          "A'.14",
+          "A'.15",
+          "A'.16",
+          "A.01",
+          "A.02",
+          "A.03",
+          "A.04",
+          "A.06",
+          "B.01",
+          "B.02",
+          "B.04",
+          "B.05",
+          "B.06",
+          "B.07",
+          "B.08",
+          "B.09",
+          "B.10",
+          "B.11",
+          "B.12",
+          "B.13",
+          "B.14",
+          "B.15",
+          "B.16",
+          "B.18",
+          "B.19",
+          "B.20",
+          "B.23",
+          "B.24",
+          "C.01",
+          "C.02",
+          "C.03",
+          "C.04",
+          "C.05",
+          "C.06",
+          "C.07",
+          "C.08",
+          "C.09",
+          "C.10",
+          "C.11",
+          "C.12",
+          "C.13",
+          "C.14",
+          "C.15",
+          "C.16",
+          "C.17",
+          "C.18",
+          "C.19",
+          "C.20",
+          "C.21",
+          "C.22",
+          "C.23",
+          "C.24",
+          "C.25",
+          "C.26",
+          "C.27",
+          "C.28",
+          "C.29",
+          "C.30",
+          "C.31",
+          "C.32",
+          "C.33",
+          "C.34",
+          "C.35",
+          "C.36"
+        ]
+      },
+      "vote_entropy_all": {
+        "n_a_prime": 14,
+        "n_comparator": 82,
+        "mean_a_prime": 0.06559255957532069,
+        "mean_comparator": 0.3657118659418053,
+        "observed_difference_bits": -0.30011930636648465,
+        "p_greater_primary": 0.9962,
+        "p_less_exploratory": 0.0085,
+        "p_two_sided_exploratory": 0.02296,
+        "null_mean": 0.0011058666624323304,
+        "null_sd": 0.13107119348215418,
+        "permutations": 49999,
+        "exact_enumeration": false,
+        "seed": 20260914,
+        "upper_tail_exceedances": 49809,
+        "lower_tail_exceedances": 424,
+        "two_sided_exceedances": 1147,
+        "monte_carlo_add_one": true,
+        "primary_mc_standard_error_approx": 0.00027515668263736664,
+        "per_category_mean_entropy_bits": {
+          "A": 0.576427434382175,
+          "A_prime": 0.06559255957532069,
+          "B": 0.684208968595349,
+          "C": 0.372834901761394,
+          "D": 0.0
+        },
+        "a_prime_rank_descending": 4,
+        "pair_ids": [
+          "A'.01",
+          "A'.02",
+          "A'.03",
+          "A'.04",
+          "A'.05",
+          "A'.06",
+          "A'.07",
+          "A'.08",
+          "A'.09",
+          "A'.10",
+          "A'.13",
+          "A'.14",
+          "A'.15",
+          "A'.16",
+          "A.01",
+          "A.02",
+          "A.03",
+          "A.04",
+          "A.06",
+          "B.01",
+          "B.02",
+          "B.04",
+          "B.05",
+          "B.06",
+          "B.07",
+          "B.08",
+          "B.09",
+          "B.10",
+          "B.11",
+          "B.12",
+          "B.13",
+          "B.14",
+          "B.15",
+          "B.16",
+          "B.18",
+          "B.19",
+          "B.20",
+          "B.23",
+          "B.24",
+          "C.01",
+          "C.02",
+          "C.03",
+          "C.04",
+          "C.05",
+          "C.06",
+          "C.07",
+          "C.08",
+          "C.09",
+          "C.10",
+          "C.11",
+          "C.12",
+          "C.13",
+          "C.14",
+          "C.15",
+          "C.16",
+          "C.17",
+          "C.18",
+          "C.19",
+          "C.20",
+          "C.21",
+          "C.22",
+          "C.23",
+          "C.24",
+          "C.25",
+          "C.26",
+          "C.27",
+          "C.28",
+          "C.29",
+          "C.30",
+          "C.31",
+          "C.32",
+          "C.33",
+          "C.34",
+          "C.35",
+          "C.36",
+          "D.01",
+          "D.02",
+          "D.03",
+          "D.04",
+          "D.05",
+          "D.06",
+          "D.07",
+          "D.08",
+          "D.09",
+          "D.10",
+          "D.11",
+          "D.12",
+          "D.13",
+          "D.14",
+          "D.15",
+          "D.16",
+          "D.19",
+          "D.21",
+          "D.23",
+          "D.24",
+          "D.25"
+        ]
+      },
+      "vote_entropy_noncontrols": {
+        "n_a_prime": 14,
+        "n_comparator": 61,
+        "mean_a_prime": 0.06559255957532069,
+        "mean_comparator": 0.49161267224963995,
+        "observed_difference_bits": -0.4260201126743193,
+        "p_greater_primary": 0.99982,
+        "p_less_exploratory": 0.00048,
+        "p_two_sided_exploratory": 0.00182,
+        "null_mean": 0.0007268613754769612,
+        "null_sd": 0.14135859156931765,
+        "permutations": 49999,
+        "exact_enumeration": false,
+        "seed": 20260914,
+        "upper_tail_exceedances": 49990,
+        "lower_tail_exceedances": 23,
+        "two_sided_exceedances": 90,
+        "monte_carlo_add_one": true,
+        "primary_mc_standard_error_approx": 5.9994599756971126e-05,
+        "per_category_mean_entropy_bits": {
+          "A": 0.576427434382175,
+          "A_prime": 0.06559255957532069,
+          "B": 0.684208968595349,
+          "C": 0.372834901761394
+        },
+        "a_prime_rank_descending": 4,
+        "pair_ids": [
+          "A'.01",
+          "A'.02",
+          "A'.03",
+          "A'.04",
+          "A'.05",
+          "A'.06",
+          "A'.07",
+          "A'.08",
+          "A'.09",
+          "A'.10",
+          "A'.13",
+          "A'.14",
+          "A'.15",
+          "A'.16",
+          "A.01",
+          "A.02",
+          "A.03",
+          "A.04",
+          "A.06",
+          "B.01",
+          "B.02",
+          "B.04",
+          "B.05",
+          "B.06",
+          "B.07",
+          "B.08",
+          "B.09",
+          "B.10",
+          "B.11",
+          "B.12",
+          "B.13",
+          "B.14",
+          "B.15",
+          "B.16",
+          "B.18",
+          "B.19",
+          "B.20",
+          "B.23",
+          "B.24",
+          "C.01",
+          "C.02",
+          "C.03",
+          "C.04",
+          "C.05",
+          "C.06",
+          "C.07",
+          "C.08",
+          "C.09",
+          "C.10",
+          "C.11",
+          "C.12",
+          "C.13",
+          "C.14",
+          "C.15",
+          "C.16",
+          "C.17",
+          "C.18",
+          "C.19",
+          "C.20",
+          "C.21",
+          "C.22",
+          "C.23",
+          "C.24",
+          "C.25",
+          "C.26",
+          "C.27",
+          "C.28",
+          "C.29",
+          "C.30",
+          "C.31",
+          "C.32",
+          "C.33",
+          "C.34",
+          "C.35",
+          "C.36"
+        ]
+      },
+      "judge_modal_entropy_bits_all": {
+        "n_a_prime": 14,
+        "n_comparator": 82,
+        "mean_a_prime": 0.06559255957532069,
+        "mean_comparator": 0.3186258640585921,
+        "observed_difference_bits": -0.25303330448327144,
+        "p_greater_primary": 0.99448,
+        "p_less_exploratory": 0.03774,
+        "p_two_sided_exploratory": 0.07622,
+        "null_mean": 0.0007540819874870359,
+        "null_sd": 0.1299630728313257,
+        "permutations": 49999,
+        "exact_enumeration": false,
+        "seed": 20260914,
+        "upper_tail_exceedances": 49723,
+        "lower_tail_exceedances": 1886,
+        "two_sided_exceedances": 3810,
+        "monte_carlo_add_one": true,
+        "primary_mc_standard_error_approx": 0.00033134663420653516,
+        "per_category_mean_entropy_bits": {
+          "A": 0.5006516669551291,
+          "A_prime": 0.06559255957532069,
+          "B": 0.6302256254687515,
+          "C": 0.3060986113514965,
+          "D": 0.0
+        },
+        "a_prime_rank_descending": 4,
+        "pair_ids": [
+          "A'.01",
+          "A'.02",
+          "A'.03",
+          "A'.04",
+          "A'.05",
+          "A'.06",
+          "A'.07",
+          "A'.08",
+          "A'.09",
+          "A'.10",
+          "A'.13",
+          "A'.14",
+          "A'.15",
+          "A'.16",
+          "A.01",
+          "A.02",
+          "A.03",
+          "A.04",
+          "A.06",
+          "B.01",
+          "B.02",
+          "B.04",
+          "B.05",
+          "B.06",
+          "B.07",
+          "B.08",
+          "B.09",
+          "B.10",
+          "B.11",
+          "B.12",
+          "B.13",
+          "B.14",
+          "B.15",
+          "B.16",
+          "B.18",
+          "B.19",
+          "B.20",
+          "B.23",
+          "B.24",
+          "C.01",
+          "C.02",
+          "C.03",
+          "C.04",
+          "C.05",
+          "C.06",
+          "C.07",
+          "C.08",
+          "C.09",
+          "C.10",
+          "C.11",
+          "C.12",
+          "C.13",
+          "C.14",
+          "C.15",
+          "C.16",
+          "C.17",
+          "C.18",
+          "C.19",
+          "C.20",
+          "C.21",
+          "C.22",
+          "C.23",
+          "C.24",
+          "C.25",
+          "C.26",
+          "C.27",
+          "C.28",
+          "C.29",
+          "C.30",
+          "C.31",
+          "C.32",
+          "C.33",
+          "C.34",
+          "C.35",
+          "C.36",
+          "D.01",
+          "D.02",
+          "D.03",
+          "D.04",
+          "D.05",
+          "D.06",
+          "D.07",
+          "D.08",
+          "D.09",
+          "D.10",
+          "D.11",
+          "D.12",
+          "D.13",
+          "D.14",
+          "D.15",
+          "D.16",
+          "D.19",
+          "D.21",
+          "D.23",
+          "D.24",
+          "D.25"
+        ]
+      },
+      "judge_modal_entropy_bits_noncontrols": {
+        "n_a_prime": 14,
+        "n_comparator": 61,
+        "mean_a_prime": 0.06559255957532069,
+        "mean_comparator": 0.4283167352918779,
+        "observed_difference_bits": -0.36272417571655724,
+        "p_greater_primary": 0.99948,
+        "p_less_exploratory": 0.0069,
+        "p_two_sided_exploratory": 0.01312,
+        "null_mean": 0.0003110788382010564,
+        "null_sd": 0.1426428173650776,
+        "permutations": 49999,
+        "exact_enumeration": false,
+        "seed": 20260914,
+        "upper_tail_exceedances": 49973,
+        "lower_tail_exceedances": 344,
+        "two_sided_exceedances": 655,
+        "monte_carlo_add_one": true,
+        "primary_mc_standard_error_approx": 0.0001019538719225479,
+        "per_category_mean_entropy_bits": {
+          "A": 0.5006516669551291,
+          "A_prime": 0.06559255957532069,
+          "B": 0.6302256254687515,
+          "C": 0.3060986113514965
+        },
+        "a_prime_rank_descending": 4,
+        "pair_ids": [
+          "A'.01",
+          "A'.02",
+          "A'.03",
+          "A'.04",
+          "A'.05",
+          "A'.06",
+          "A'.07",
+          "A'.08",
+          "A'.09",
+          "A'.10",
+          "A'.13",
+          "A'.14",
+          "A'.15",
+          "A'.16",
+          "A.01",
+          "A.02",
+          "A.03",
+          "A.04",
+          "A.06",
+          "B.01",
+          "B.02",
+          "B.04",
+          "B.05",
+          "B.06",
+          "B.07",
+          "B.08",
+          "B.09",
+          "B.10",
+          "B.11",
+          "B.12",
+          "B.13",
+          "B.14",
+          "B.15",
+          "B.16",
+          "B.18",
+          "B.19",
+          "B.20",
+          "B.23",
+          "B.24",
+          "C.01",
+          "C.02",
+          "C.03",
+          "C.04",
+          "C.05",
+          "C.06",
+          "C.07",
+          "C.08",
+          "C.09",
+          "C.10",
+          "C.11",
+          "C.12",
+          "C.13",
+          "C.14",
+          "C.15",
+          "C.16",
+          "C.17",
+          "C.18",
+          "C.19",
+          "C.20",
+          "C.21",
+          "C.22",
+          "C.23",
+          "C.24",
+          "C.25",
+          "C.26",
+          "C.27",
+          "C.28",
+          "C.29",
+          "C.30",
+          "C.31",
+          "C.32",
+          "C.33",
+          "C.34",
+          "C.35",
+          "C.36"
+        ]
+      }
+    }
+  },
+  "leave_one_judge_out": {
+    "counts_over_pair_omission_runs": {
+      "became_tie": 52,
+      "full_panel_unresolved": 6,
+      "insufficient": 6,
+      "unchanged": 224
+    },
+    "all_three_omissions_unchanged_pairs": 65,
+    "full_panel_resolved_pairs": 94,
+    "rule": "Omit one judge, retain each other judge's raw-replicate modal; two usable remaining judges must agree. Disagreement is TIE; fewer than two usable judges is INSUFFICIENT. No arbitrary tie break.",
+    "per_category": {
+      "A": {
+        "became_tie": 2,
+        "full_panel_unresolved": 3,
+        "unchanged": 10
+      },
+      "A_prime": {
+        "became_tie": 2,
+        "insufficient": 2,
+        "unchanged": 38
+      },
+      "B": {
+        "became_tie": 24,
+        "full_panel_unresolved": 3,
+        "insufficient": 2,
+        "unchanged": 31
+      },
+      "C": {
+        "became_tie": 24,
+        "insufficient": 2,
+        "unchanged": 82
+      },
+      "D": {
+        "unchanged": 63
+      }
+    }
+  },
+  "S1_origin_counts": {
+    "all_100_pairs": {
+      "n_pairs": 100,
+      "n_sides": 200,
+      "backfilled_sides": 159,
+      "no_backfill_record_sides": 41,
+      "backfilled_sides_percent": 79.5,
+      "side_grounding_counts": {
+        "no-backfill-record": 41,
+        "model-knowledge": 148,
+        "web-verified": 11
+      },
+      "pair_n_backfilled_counts": {
+        "0": 18,
+        "1": 5,
+        "2": 77
+      },
+      "side_backfill_confidence_counts": {
+        "high": 155,
+        "medium": 4
+      },
+      "curation_status_counts": {
+        "not_yet_curated": 100
+      }
+    },
+    "scored_96_pairs": {
+      "n_pairs": 96,
+      "n_sides": 192,
+      "backfilled_sides": 151,
+      "no_backfill_record_sides": 41,
+      "backfilled_sides_percent": 78.64583333333333,
+      "side_grounding_counts": {
+        "no-backfill-record": 41,
+        "model-knowledge": 142,
+        "web-verified": 9
+      },
+      "pair_n_backfilled_counts": {
+        "0": 18,
+        "1": 5,
+        "2": 73
+      },
+      "side_backfill_confidence_counts": {
+        "high": 148,
+        "medium": 3
+      },
+      "curation_status_counts": {
+        "not_yet_curated": 96
+      }
+    },
+    "excluded_HN_4_pairs": {
+      "n_pairs": 4,
+      "n_sides": 8,
+      "backfilled_sides": 8,
+      "no_backfill_record_sides": 0,
+      "backfilled_sides_percent": 100.0,
+      "side_grounding_counts": {
+        "model-knowledge": 6,
+        "web-verified": 2
+      },
+      "pair_n_backfilled_counts": {
+        "2": 4
+      },
+      "side_backfill_confidence_counts": {
+        "high": 7,
+        "medium": 1
+      },
+      "curation_status_counts": {
+        "not_yet_curated": 4
+      }
+    },
+    "scored_per_category": {
+      "A": {
+        "n_pairs": 5,
+        "n_sides": 10,
+        "backfilled_sides": 0,
+        "no_backfill_record_sides": 10,
+        "backfilled_sides_percent": 0.0,
+        "side_grounding_counts": {
+          "no-backfill-record": 10
+        },
+        "pair_n_backfilled_counts": {
+          "0": 5
+        },
+        "side_backfill_confidence_counts": {},
+        "curation_status_counts": {
+          "not_yet_curated": 5
+        }
+      },
+      "A_prime": {
+        "n_pairs": 14,
+        "n_sides": 28,
+        "backfilled_sides": 11,
+        "no_backfill_record_sides": 17,
+        "backfilled_sides_percent": 39.285714285714285,
+        "side_grounding_counts": {
+          "model-knowledge": 10,
+          "web-verified": 1,
+          "no-backfill-record": 17
+        },
+        "pair_n_backfilled_counts": {
+          "0": 8,
+          "1": 1,
+          "2": 5
+        },
+        "side_backfill_confidence_counts": {
+          "high": 11
+        },
+        "curation_status_counts": {
+          "not_yet_curated": 14
+        }
+      },
+      "B": {
+        "n_pairs": 20,
+        "n_sides": 40,
+        "backfilled_sides": 38,
+        "no_backfill_record_sides": 2,
+        "backfilled_sides_percent": 95.0,
+        "side_grounding_counts": {
+          "model-knowledge": 35,
+          "web-verified": 3,
+          "no-backfill-record": 2
+        },
+        "pair_n_backfilled_counts": {
+          "1": 2,
+          "2": 18
+        },
+        "side_backfill_confidence_counts": {
+          "high": 36,
+          "medium": 2
+        },
+        "curation_status_counts": {
+          "not_yet_curated": 20
+        }
+      },
+      "C": {
+        "n_pairs": 36,
+        "n_sides": 72,
+        "backfilled_sides": 60,
+        "no_backfill_record_sides": 12,
+        "backfilled_sides_percent": 83.33333333333333,
+        "side_grounding_counts": {
+          "model-knowledge": 57,
+          "web-verified": 3,
+          "no-backfill-record": 12
+        },
+        "pair_n_backfilled_counts": {
+          "0": 5,
+          "1": 2,
+          "2": 29
+        },
+        "side_backfill_confidence_counts": {
+          "high": 59,
+          "medium": 1
+        },
+        "curation_status_counts": {
+          "not_yet_curated": 36
+        }
+      },
+      "D": {
+        "n_pairs": 21,
+        "n_sides": 42,
+        "backfilled_sides": 42,
+        "no_backfill_record_sides": 0,
+        "backfilled_sides_percent": 100.0,
+        "side_grounding_counts": {
+          "model-knowledge": 40,
+          "web-verified": 2
+        },
+        "pair_n_backfilled_counts": {
+          "2": 21
+        },
+        "side_backfill_confidence_counts": {
+          "high": 42
+        },
+        "curation_status_counts": {
+          "not_yet_curated": 21
+        }
+      }
+    },
+    "interpretation": "No definition_backfill record is an absence-of-metadata category, not proof of original cited text or human validation. Grounding/confidence are archived metadata, not independently verified here."
+  },
+  "risk": {
+    "current_summary": {
+      "priority_counts": {
+        "HIGH": 56,
+        "LOW": 12,
+        "MED": 28
+      },
+      "backfill_status_counts": {
+        "both-sides-backfilled": 73,
+        "both-sides-original": 18,
+        "one-side-backfilled": 5
+      },
+      "source_strength_counts": {
+        "medium": 47,
+        "strong": 20,
+        "weak": 29
+      },
+      "min_backfill_confidence_counts": {
+        "high": 75,
+        "medium": 3,
+        "none": 18
+      },
+      "n_gold_tier": 39,
+      "n_gold_tier_strict": 0,
+      "n_provisional": 57
+    },
+    "per_category": [
+      {
+        "category": "ALL",
+        "n_pairs": 96,
+        "n_pairs_no_backfill_record_both_sides": 18,
+        "n_backfilled_sides": 151,
+        "pct_pairs_no_backfill_record_both_sides": 18.75,
+        "mean_vote_entropy_bits": 0.321944467096693,
+        "n_HIGH": 56,
+        "n_MED": 28,
+        "n_LOW": 12,
+        "n_operational_tier": 39,
+        "n_strict_tier": 0
+      },
+      {
+        "category": "A",
+        "n_pairs": 5,
+        "n_pairs_no_backfill_record_both_sides": 5,
+        "n_backfilled_sides": 0,
+        "pct_pairs_no_backfill_record_both_sides": 100.0,
+        "mean_vote_entropy_bits": 0.576427434382175,
+        "n_HIGH": 5,
+        "n_MED": 0,
+        "n_LOW": 0,
+        "n_operational_tier": 0,
+        "n_strict_tier": 0
+      },
+      {
+        "category": "A_prime",
+        "n_pairs": 14,
+        "n_pairs_no_backfill_record_both_sides": 8,
+        "n_backfilled_sides": 11,
+        "pct_pairs_no_backfill_record_both_sides": 57.142857142857146,
+        "mean_vote_entropy_bits": 0.06559255957532069,
+        "n_HIGH": 9,
+        "n_MED": 2,
+        "n_LOW": 3,
+        "n_operational_tier": 5,
+        "n_strict_tier": 0
+      },
+      {
+        "category": "B",
+        "n_pairs": 20,
+        "n_pairs_no_backfill_record_both_sides": 0,
+        "n_backfilled_sides": 38,
+        "pct_pairs_no_backfill_record_both_sides": 0.0,
+        "mean_vote_entropy_bits": 0.684208968595349,
+        "n_HIGH": 16,
+        "n_MED": 3,
+        "n_LOW": 1,
+        "n_operational_tier": 4,
+        "n_strict_tier": 0
+      },
+      {
+        "category": "C",
+        "n_pairs": 36,
+        "n_pairs_no_backfill_record_both_sides": 5,
+        "n_backfilled_sides": 60,
+        "pct_pairs_no_backfill_record_both_sides": 13.88888888888889,
+        "mean_vote_entropy_bits": 0.372834901761394,
+        "n_HIGH": 20,
+        "n_MED": 9,
+        "n_LOW": 7,
+        "n_operational_tier": 15,
+        "n_strict_tier": 0
+      },
+      {
+        "category": "D",
+        "n_pairs": 21,
+        "n_pairs_no_backfill_record_both_sides": 0,
+        "n_backfilled_sides": 42,
+        "pct_pairs_no_backfill_record_both_sides": 0.0,
+        "mean_vote_entropy_bits": 0.0,
+        "n_HIGH": 6,
+        "n_MED": 14,
+        "n_LOW": 1,
+        "n_operational_tier": 15,
+        "n_strict_tier": 0
+      }
+    ],
+    "interpretation": "Historical HIGH/MED/LOW and gold_tier flags are reproduced as sampling heuristics, not validated quality or correctness. Weakest definition_source string governs source_strength; a weak side does not imply both sides have no source. No source lookup or human validation was conducted.",
+    "archived_risk_pair_field_differences": 0
+  },
+  "source_comparisons": {
+    "differences": [],
+    "legacy_comparison_only": {
+      "old_Q6": {
+        "null_hypothesis": "S6 correctness on L3 pairs equals S2 and equals S5",
+        "test": "two McNemar tests with Holm correction",
+        "per_comparison": {
+          "s6_vs_s2": {
+            "n_shared": 29,
+            "cells": {
+              "n00": 14,
+              "n01": 0,
+              "n10": 15,
+              "n11": 0
+            },
+            "p_value": 6.103515625e-05,
+            "s6_better_count": 15,
+            "other_better_count": 0,
+            "holm_adjusted_p": 0.0001220703125
+          },
+          "s6_vs_s5": {
+            "n_shared": 29,
+            "cells": {
+              "n00": 14,
+              "n01": 0,
+              "n10": 15,
+              "n11": 0
+            },
+            "p_value": 6.103515625e-05,
+            "s6_better_count": 15,
+            "other_better_count": 0,
+            "holm_adjusted_p": 6.103515625e-05
+          }
+        },
+        "statistic": 30,
+        "p_value": 6.103515625e-05,
+        "direction_correct": true,
+        "power_note": "McNemar needs ≥ ~10 discordant pairs for stable inference; smaller L3 subsets yield wide CIs."
+      },
+      "old_Q7": {
+        "null_hypothesis": "mean_entropy(A_prime) - mean_entropy(non_A_prime) <= 0",
+        "test": "permutation null over category labels (1000 iterations)",
+        "n_permutations": 1000,
+        "statistic": -0.3001193063664846,
+        "p_value": 0.993,
+        "direction_correct": false,
+        "power_note": "Permutation preserves category sizes; power depends on raw between-category entropy gap and pair count per category.",
+        "observed_diff": -0.3001193063664846,
+        "null_mean": -0.002779808703704475,
+        "null_sd": 0.1275169970589888,
+        "rank_a_prime": 4,
+        "rank_first_pct": 0.208,
+        "per_category_mean_entropy": {
+          "A": 0.5764274343821749,
+          "A_prime": 0.06559255957532069,
+          "B": 0.6842089685953489,
+          "C": 0.37283490176139406,
+          "D": 0.0
+        },
+        "n_aprime": 14,
+        "n_non_aprime": 82
+      },
+      "old_per_system_graded": {
+        "S2_wulff_mata": {
+          "n_scored": 94,
+          "accuracy": 0.2872340425531915,
+          "kappa": 0.1458022514580225,
+          "per_category": {
+            "A": {
+              "n": 4,
+              "accuracy": 0.25
+            },
+            "A_prime": {
+              "n": 14,
+              "accuracy": 0.0
+            },
+            "B": {
+              "n": 19,
+              "accuracy": 0.21052631578947367
+            },
+            "C": {
+              "n": 36,
+              "accuracy": 0.25
+            },
+            "D": {
+              "n": 21,
+              "accuracy": 0.6190476190476191
+            }
+          }
+        },
+        "S5_generic_embed": {
+          "n_scored": 94,
+          "accuracy": 0.26595744680851063,
+          "kappa": 0.13195931477516065,
+          "per_category": {
+            "A": {
+              "n": 4,
+              "accuracy": 0.25
+            },
+            "A_prime": {
+              "n": 14,
+              "accuracy": 0.0
+            },
+            "B": {
+              "n": 19,
+              "accuracy": 0.21052631578947367
+            },
+            "C": {
+              "n": 36,
+              "accuracy": 0.19444444444444445
+            },
+            "D": {
+              "n": 21,
+              "accuracy": 0.6190476190476191
+            }
+          }
+        },
+        "S6_llm_direct": {
+          "n_scored": 282,
+          "accuracy": 0.6099290780141844,
+          "kappa": 0.4858023770451042,
+          "per_category": {
+            "A": {
+              "n": 12,
+              "accuracy": 0.0
+            },
+            "A_prime": {
+              "n": 42,
+              "accuracy": 0.7142857142857143
+            },
+            "B": {
+              "n": 57,
+              "accuracy": 0.15789473684210525
+            },
+            "C": {
+              "n": 108,
+              "accuracy": 0.7314814814814815
+            },
+            "D": {
+              "n": 63,
+              "accuracy": 0.8571428571428571
+            }
+          }
+        }
+      },
+      "old_reliability": {
+        "fleiss_alpha": 0.7102971571849693,
+        "krippendorff_alpha": 0.7132448781792052
+      }
+    }
+  },
+  "verification": {
+    "raw_input_hashes_unchanged": true,
+    "unique_pair_and_replicate_keys_checked": true,
+    "scored_pair_sets_match": true,
+    "panel_expected_847_of_864": true,
+    "no_model_services_or_downloads": true
+  }
+}

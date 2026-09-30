@@ -1,0 +1,1 @@
+Given construct A and construct B, classify their relationship as exactly one of L1-L6: L1 equivalent, L2 overlapping, L3 hierarchical/parent-child, L4 same or similar label but different referents, L5 different labels but same/sibling referent, L6 insufficient evidence. Return JSON `{label, confidence, rationale}`. Do not use a stepwise adjudication protocol.

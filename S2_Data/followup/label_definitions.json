@@ -1,0 +1,67 @@
+[
+  {
+    "definition": "The two definitions are talking about the same thing. That does not mean the scales can be swapped.",
+    "id": "C01",
+    "label": "Same concept"
+  },
+  {
+    "definition": "Everything that counts as A also counts as B, but B covers other cases too. More than just a change of setting.",
+    "id": "C02",
+    "label": "A is a type of B"
+  },
+  {
+    "definition": "Everything that counts as B also counts as A, but A covers other cases too. More than just a change of setting.",
+    "id": "C03",
+    "label": "B is a type of A"
+  },
+  {
+    "definition": "A is mainly B limited to a domain, object, or task.",
+    "id": "C04",
+    "label": "A is B in a particular setting"
+  },
+  {
+    "definition": "B is mainly A limited to a domain, object, or task.",
+    "id": "C05",
+    "label": "B is A in a particular setting"
+  },
+  {
+    "definition": "A is a piece or dimension of B, not a subtype of B.",
+    "id": "C06",
+    "label": "A is part of B"
+  },
+  {
+    "definition": "B is a piece or dimension of A, not a subtype of A.",
+    "id": "C07",
+    "label": "B is part of A"
+  },
+  {
+    "definition": "Two distinct kinds under the same broader idea. Sharing a topic is not enough.",
+    "id": "C08",
+    "label": "Parallel concepts"
+  },
+  {
+    "definition": "They share some of what they mean, or some of the cases they cover, but each also goes beyond the other.",
+    "id": "C09",
+    "label": "Partial overlap"
+  },
+  {
+    "definition": "None of the types above fit, but there is still a link (for example, one leads to the other). A short note helps.",
+    "id": "C10",
+    "label": "Other relationship"
+  },
+  {
+    "definition": "The definitions are clear enough, but they do not support any of the links above. They may still be correlated.",
+    "id": "C11",
+    "label": "None of the above"
+  },
+  {
+    "definition": "More than one of the links above is reasonable, and picking a single one would be forced. List them in the note if you like.",
+    "id": "C12",
+    "label": "More than one applies"
+  },
+  {
+    "definition": "The materials are too thin or too unclear. You do not need to look anything else up.",
+    "id": "C13",
+    "label": "Can't tell from the materials"
+  }
+]

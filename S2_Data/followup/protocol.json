@@ -1,0 +1,22 @@
+{
+  "version": "independent-reference-v1-20260915",
+  "seed": 20260915,
+  "max_tokens": 1024,
+  "temperature": 0,
+  "top_p": 1,
+  "arms": ["D", "F", "L"],
+  "max_retries": 0,
+  "formal_initial_calls": 594,
+  "smoke_initial_calls": 9,
+  "budget_cny": 50,
+  "reserve_cny": 5,
+  "cost_policy": "Conservative uncached, high-tier/peak-time upper estimates, not billed account totals. Fail closed if usage unknown or reservation bound is exceeded.",
+  "providers": [
+    {"id":"qwen","model":"qwen3-max-2026-01-23","url":"https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions","env":"DASHSCOPE_API_KEY","input_rate":2.5,"output_rate":10,"extra":{"enable_thinking":false}},
+    {"id":"glm","model":"glm-4.7","url":"https://open.bigmodel.cn/api/paas/v4/chat/completions","env":"ZHIPU_API_KEY","input_rate":3,"output_rate":14,"extra":{"thinking":{"type":"disabled"}}},
+    {"id":"deepseek","model":"deepseek-v4-pro","url":"https://api.deepseek.com/chat/completions","env":"DEEPSEEK_API_KEY","input_rate":9,"output_rate":27,"extra":{"thinking":{"type":"disabled"}}}
+  ],
+  "selection_note": "Executor chose catalog-listed versions before new outputs. GLM-4.7 has current public pricing; legacy GLM-4.6 was not silently assumed to retain its previous price. Qwen snapshot pinned, DeepSeek endpoint is a serving alias; record returned models and dates.",
+  "human_reference_sha256": "c9a1e530ce629db90e753e6029dc8c5ef9c1a249e04e7cf73091a5e72ae26fde",
+  "statistical_policy": "Item-weighted descriptive paired effects; cluster bootstrap intervals conditional on components; sign-flip p-values, if computed, exploratory/conditional only, not confirmatory. No verified sign-exchangeability or random population sampling claim."
+}

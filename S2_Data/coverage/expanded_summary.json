@@ -1,0 +1,14 @@
+{
+  "original_96": {
+    "pairs": 96,
+    "sides_with_leads": 55,
+    "both_endpoint_leads": 17,
+    "graph_lead_pairs": 6
+  },
+  "formal_66": {
+    "pairs": 66,
+    "sides_with_leads": 36,
+    "both_endpoint_leads": 12,
+    "graph_lead_pairs": 3
+  }
+}

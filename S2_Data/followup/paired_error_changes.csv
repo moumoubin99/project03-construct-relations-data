@@ -1,0 +1,13 @@
+analysis_role,provider,comparison,n,new_reference_matches,lost_reference_matches,both_match,neither_match,changed_outcomes,net_reference_matches,both_returned_valid_n,returned_label_changes
+initial,qwen,F-D,66,0,3,33,30,11,-3,66,11
+initial,qwen,F-L,66,1,5,32,28,9,-4,66,9
+initial,glm,F-D,66,4,5,31,26,12,-1,66,12
+initial,glm,F-L,66,3,0,32,31,8,3,65,7
+initial,deepseek,F-D,66,5,1,27,33,15,4,66,15
+initial,deepseek,F-L,66,5,4,27,30,16,1,66,16
+recovered,qwen,F-D,66,0,3,33,30,11,-3,66,11
+recovered,qwen,F-L,66,1,5,32,28,9,-4,66,9
+recovered,glm,F-D,66,4,5,31,26,12,-1,66,12
+recovered,glm,F-L,66,2,0,33,31,7,2,66,7
+recovered,deepseek,F-D,66,5,1,27,33,15,4,66,15
+recovered,deepseek,F-L,66,5,4,27,30,16,1,66,16

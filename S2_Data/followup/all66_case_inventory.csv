@@ -1,0 +1,67 @@
+item_id,construct_A,construct_B,reference,matched_conditions_out_of9,all9_same_label,prediction_counts,qwen_D,qwen_F,qwen_L,glm_D,glm_F,glm_L,deepseek_D,deepseek_F,deepseek_L
+R007,A: Flow (Nakamura and Csikszentmihalyi),"B: Web flow (Novak et al., 2000)",C05,9,True,"{""C05"": 9}",C05,C05,C05,C05,C05,C05,C05,C05,C05
+R008,A: Self-efficacy (Bandura),B: Global self-esteem (Rosenberg scale),C11,1,False,"{""C08"": 6, ""C09"": 2, ""C11"": 1}",C08,C09,C09,C08,C08,C08,C08,C08,C11
+R009,"A: Self-monitoring (Snyder, 1974)","B: Impression management (Leary and Kowalski, 1990)",C09,6,False,"{""C06"": 1, ""C04"": 1, ""C09"": 6, ""C02"": 1}",C06,C04,C09,C09,C09,C09,C02,C09,C09
+R010,"A: Focused visual attention (feature integration theory; Treisman and Gelade, 1980)","B: Visual attention to print advertising (Pieters and Wedel, 2004)",C09,1,False,"{""C05"": 6, ""C09"": 1, ""C11"": 1, ""C08"": 1}",C05,C05,C05,C05,C09,C05,C05,C11,C08
+R011,"A: Work engagement (Schaufeli et al., 2002)","B: Job satisfaction (Locke, 1969)",C09,4,False,"{""C09"": 4, ""C08"": 2, ""C11"": 3}",C09,C09,C09,C08,C08,C11,C11,C11,C09
+R012,"A: Behavioral intention (Ajzen, 1991)","B: Purchase intention (Spears and Singh, 2004)",C05,9,True,"{""C05"": 9}",C05,C05,C05,C05,C05,C05,C05,C05,C05
+R013,"A: Implementation intention (Gollwitzer, 1999)","B: Action planning (Sniehotta et al., 2005)",C01,6,False,"{""C02"": 3, ""C01"": 6}",C02,C02,C01,C01,C01,C01,C02,C01,C01
+R014,"A: Self-disclosure (definition used by Joinson, 2001)","B: Self-disclosure on social networking sites (Krasnova et al., 2010)",C05,9,True,"{""C05"": 9}",C05,C05,C05,C05,C05,C05,C05,C05,C05
+R016,A: Neuroticism (NEO-PI-R),B: Neuroticism (BFI),C09,1,False,"{""C01"": 8, ""C09"": 1}",C01,C01,C09,C01,C01,C01,C01,C01,C01
+R017,"A: Visual stimulus salience (Itti and Koch, 2001)","B: Brand salience (Romaniuk and Sharp, 2004)",C11,1,False,"{""C08"": 6, ""C09"": 2, ""C11"": 1}",C08,C09,C09,C08,C11,C08,C08,C08,C08
+R018,A: Customer engagement (Brodie et al.),"B: Consumer involvement (Zaichkowsky, 1985)",C10,0,True,"{""C09"": 9}",C09,C09,C09,C09,C09,C09,C09,C09,C09
+R019,"A: Commitment in close relationships (Rusbult et al., 1998; application in marital research)","B: Organizational commitment (Meyer and Allen, 1991)",C08,9,True,"{""C08"": 9}",C08,C08,C08,C08,C08,C08,C08,C08,C08
+R020,"A: Consumer loyalty (Oliver, 1999)",B: Customer engagement (Brodie et al.),C10,0,False,"{""C09"": 3, ""C11"": 6}",C09,C09,C09,C11,C11,C11,C11,C11,C11
+R022,"A: Individual authenticity (Kernis and Goldman, 2006)","B: Perceived brand authenticity (Morhart et al., 2015)",C11,0,False,"{""C08"": 6, ""C09"": 2, ""C05"": 1}",C08,C09,C09,C05,C08,C08,C08,C08,C08
+R023,"A: Need for cognition (Cacioppo and Petty, 1982)","B: Cognitive flexibility (CFI; Dennis and Vander Wal, 2010)",C11,6,False,"{""C09"": 3, ""C11"": 6}",C09,C09,C09,C11,C11,C11,C11,C11,C11
+R024,"A: Perceived ease of use (Davis, 1989)","B: Computer self-efficacy (Compeau and Higgins, 1995)",C10,1,False,"{""C09"": 4, ""C10"": 1, ""C11"": 3, ""C08"": 1}",C09,C09,C09,C10,C11,C11,C08,C09,C11
+R025,"A: Perceived stress (PSS-10; Cohen and Williamson, 1988)","B: Perceived stress (PSS-4; Cohen and Williamson, 1988)",C01,3,False,"{""C03"": 3, ""C07"": 3, ""C01"": 3}",C03,C07,C07,C01,C01,C01,C03,C03,C07
+R026,"A: Consumer switching costs (Burnham et al., 2003)","B: Cognitive effort (Payne et al., 1988; processing demands of choice strategies)",C10,0,False,"{""C07"": 6, ""C09"": 2, ""C11"": 1}",C07,C07,C09,C07,C07,C09,C11,C07,C07
+R027,"A: Habit (Verplanken and Orbell, 2003; SRHI)","B: IS habit (Limayem et al., 2007)",C05,5,False,"{""C05"": 5, ""C09"": 1, ""C01"": 3}",C05,C05,C09,C05,C05,C05,C01,C01,C01
+R028,"A: Affective organizational commitment (Allen and Meyer, 1990)","B: Job satisfaction (Locke, 1969)",C08,1,False,"{""C09"": 5, ""C08"": 1, ""C11"": 3}",C09,C09,C09,C08,C09,C11,C09,C11,C11
+R030,"A: Behavioral intention (Ajzen, 1991)",B: Actual behavior (this study),C10,9,True,"{""C10"": 9}",C10,C10,C10,C10,C10,C10,C10,C10,C10
+R031,"A: Educational feedback (Hattie and Timperley, 2007)",B: Visibility of system status,C09,9,True,"{""C09"": 9}",C09,C09,C09,C09,C09,C09,C09,C09,C09
+R032,A: Number of siblings (this study),B: Work engagement (UWES concept),C11,9,True,"{""C11"": 9}",C11,C11,C11,C11,C11,C11,C11,C11,C11
+R034,A: IS continuance intention,"B: Service repurchase intention (Hellier et al., 2003)",C08,1,False,"{""C04"": 3, ""C09"": 4, ""C08"": 1, ""C05"": 1}",C04,C04,C09,C04,C09,C09,C08,C05,C09
+R036,A: Subjective well-being,B: Quality of life (WHOQOL definition),C09,9,True,"{""C09"": 9}",C09,C09,C09,C09,C09,C09,C09,C09,C09
+R037,"A: Perceived usefulness (Davis, 1989)","B: Outcome expectancy (Bandura, 1977)",C04,6,False,"{""C04"": 6, ""C09"": 3}",C04,C04,C04,C04,C04,C04,C09,C09,C09
+R039,"A: Social presence (Biocca et al., 2003)",B: Telepresence (Steuer),C08,3,False,"{""C09"": 6, ""C08"": 3}",C09,C09,C09,C08,C09,C09,C08,C08,C09
+R041,A: State anxiety (STAI-S; Form Y),B: Perceived stress (PSS),C10,0,False,"{""C09"": 7, ""C11"": 2}",C09,C09,C09,C09,C09,C09,C09,C11,C11
+R042,A: Conscientiousness (NEO-PI-R),B: Conscientiousness (BFI),C09,2,False,"{""C09"": 2, ""C01"": 7}",C09,C01,C09,C01,C01,C01,C01,C01,C01
+R043,A: Satisfaction with life (SWLS),"B: Job satisfaction (Locke, 1969)",C07,0,True,"{""C05"": 9}",C05,C05,C05,C05,C05,C05,C05,C05,C05
+R047,"A: Brand love (Carroll and Ahuvia, 2006)","B: Brand attachment (Park et al., 2010)",C09,9,True,"{""C09"": 9}",C09,C09,C09,C09,C09,C09,C09,C09,C09
+R048,A: Affordance (Gibson),B: Perceived affordance (Norman's clarification),C09,4,False,"{""C03"": 3, ""C05"": 2, ""C09"": 4}",C03,C05,C05,C09,C09,C09,C03,C03,C09
+R049,A: Iris color (this study),B: State anxiety (STAI-S; Form Y),C11,9,True,"{""C11"": 9}",C11,C11,C11,C11,C11,C11,C11,C11,C11
+R051,A: Work engagement (UWES-17),B: Work engagement (UWES-9),C01,9,True,"{""C01"": 9}",C01,C01,C01,C01,C01,C01,C01,C01,C01
+R052,A: Extraversion (NEO-PI-R),B: Extraversion (BFI),C09,2,False,"{""C09"": 2, ""C01"": 7}",C09,C01,C09,C01,C01,C01,C01,C01,C01
+R054,A: Emotional exhaustion (MBI-HSS),B: Exhaustion (OLBI),C06,0,True,"{""C09"": 9}",C09,C09,C09,C09,C09,C09,C09,C09,C09
+R055,A: Service quality (SERVQUAL concept),"B: Electronic service quality (E-S-QUAL, 2005)",C05,9,True,"{""C05"": 9}",C05,C05,C05,C05,C05,C05,C05,C05,C05
+R056,"A: Intrinsic motivation (Ryan and Deci, 2000)","B: Perceived enjoyment (TAM3, 2008)",C05,5,False,"{""C05"": 5, ""C01"": 3, ""C03"": 1}",C05,C05,C05,C01,C01,C01,C05,C05,C03
+R059,"A: Need for cognitive closure (Kruglanski and Webster, 1996)","B: Personal need for structure (Neuberg and Newsom, 1993)",C09,9,True,"{""C09"": 9}",C09,C09,C09,C09,C09,C09,C09,C09,C09
+R060,"A: Consumption satisfaction (definition in Oliver, 1999)","B: Customer experience (Lemon and Verhoef, 2016)",C06,4,False,"{""C06"": 4, ""C09"": 5}",C06,C06,C06,C06,C09,C09,C09,C09,C09
+R061,"A: Customer engagement (Brodie et al., 2011)","B: User engagement (O’Brien and Toms, 2008)",C09,7,False,"{""C09"": 7, ""C08"": 2}",C09,C09,C09,C08,C09,C09,C08,C09,C09
+R063,"A: Social identification (Ashforth and Mael, 1989)","B: Organizational identification (Mael and Ashforth, 1992)",C05,6,False,"{""C05"": 6, ""C03"": 3}",C05,C05,C05,C03,C03,C03,C05,C05,C05
+R064,"A: Self-efficacy (Bandura, 2006)",B: Locus of control (conceptual definition),C08,6,False,"{""C08"": 6, ""C11"": 3}",C08,C08,C08,C08,C08,C08,C11,C11,C11
+R065,"A: State anxiety (STAI Form Y, 20-item state subscale)","B: State anxiety (Marteau and Bekker, 1992 six-item short form)",C01,6,False,"{""C03"": 1, ""C07"": 2, ""C01"": 6}",C03,C07,C07,C01,C01,C01,C01,C01,C01
+R067,"A: Perceived behavioral control (Ajzen, 1991)","B: Facilitating conditions (UTAUT, 2003)",C07,0,False,"{""C09"": 8, ""C11"": 1}",C09,C09,C09,C09,C09,C09,C09,C11,C09
+R068,A: Shoe size (recorded value and sizing system),B: Conscientiousness (BFI-44),C11,9,True,"{""C11"": 9}",C11,C11,C11,C11,C11,C11,C11,C11,C11
+R069,A: Procedural justice (organizational decisions),"B: Procedural justice in complaint handling (Tax et al., 1998)",C05,6,False,"{""C05"": 6, ""C04"": 3}",C05,C05,C05,C05,C05,C05,C04,C04,C04
+R070,"A: Brand image (Keller, 1993)","B: Corporate reputation (Fombrun and Shanley, 1990)",C09,4,False,"{""C09"": 4, ""C08"": 4, ""C11"": 1}",C09,C09,C09,C08,C08,C11,C08,C09,C08
+R071,"A: Procedural justice (Colquitt, 2001)","B: Distributive justice (Colquitt, 2001)",C08,9,True,"{""C08"": 9}",C08,C08,C08,C08,C08,C08,C08,C08,C08
+R075,"A: Word-of-mouth referral behavior (Brown and Reingen, 1987)","B: Electronic word-of-mouth (Hennig-Thurau et al., 2004)",C09,1,False,"{""C02"": 6, ""C05"": 1, ""C04"": 1, ""C09"": 1}",C02,C02,C02,C02,C02,C02,C05,C04,C09
+R076,"A: Propensity to trust (Mayer, Davis and Schoorman, 1995)","B: Propensity to trust automation (Merritt et al., 2013)",C08,0,True,"{""C05"": 9}",C05,C05,C05,C05,C05,C05,C05,C05,C05
+R078,"A: Attitude toward the behavior (Ajzen, 1991)","B: Behavior-related beliefs (TPB behavioral, normative, and control beliefs)",C10,3,False,"{""C06"": 5, ""C10"": 3, ""C07"": 1}",C06,C06,C06,C10,C07,C06,C10,C10,C06
+R079,"A: Work engagement (Schaufeli et al., 2006)","B: User engagement (O'Brien and Toms, 2008)",C09,6,False,"{""C09"": 6, ""C08"": 3}",C09,C09,C09,C08,C09,C09,C08,C09,C08
+R080,"A: Trust (Mayer, Davis and Schoorman, 1995)","B: Source credibility evaluation (celebrity endorsers; Ohanian, 1990)",C10,0,False,"{""C06"": 3, ""C07"": 4, ""C09"": 2}",C06,C06,C06,C07,C07,C07,C09,C07,C09
+R082,A: Athletic skill self-rating (1–7),"B: Internet users' information privacy concerns (IUIPC; Malhotra et al., 2004)",C11,9,True,"{""C11"": 9}",C11,C11,C11,C11,C11,C11,C11,C11,C11
+R084,"A: Psychological empowerment (Spreitzer, 1995)",B: Structural empowerment (four categories of conditions in the official CWEQ description),C10,0,False,"{""C08"": 5, ""C09"": 2, ""C11"": 2}",C08,C09,C09,C08,C08,C08,C08,C11,C11
+R086,"A: Cognitive effort (Payne et al., 1988; processing demands of choice strategies)","B: Perceived exertion (Borg, 1982)",C11,3,False,"{""C08"": 6, ""C11"": 3}",C08,C08,C08,C08,C08,C08,C11,C11,C11
+R087,A: Agreeableness (NEO-PI-R),B: Agreeableness (BFI),C09,1,False,"{""C09"": 1, ""C01"": 8}",C09,C01,C01,C01,C01,C01,C01,C01,C01
+R088,A: Favorite color (categorical variable),"B: Statistical literacy (Schield, 2010)",C11,9,True,"{""C11"": 9}",C11,C11,C11,C11,C11,C11,C11,C11,C11
+R089,"A: Computer self-efficacy (CSE; Compeau and Higgins, 1995)","B: Internet self-efficacy (Eastin and LaRose, 2000)",C09,3,False,"{""C04"": 5, ""C09"": 3, ""C05"": 1}",C04,C04,C04,C09,C09,C09,C04,C04,C05
+R091,A: Attitude toward the behavior (TPB),B: Behavioral intention (TPB),C10,9,True,"{""C10"": 9}",C10,C10,C10,C10,C10,C10,C10,C10,C10
+R092,"A: Need for cognition (NCS-18; Cacioppo, Petty and Kao, 1984)","B: Need for cognition (NCS-6; Lins de Holanda Coelho et al., 2020)",C01,9,True,"{""C01"": 9}",C01,C01,C01,C01,C01,C01,C01,C01,C01
+R093,"A: Self-disclosure (definition used by Joinson, 2001)","B: Impression management (Leary and Kowalski, 1990)",C09,3,False,"{""C09"": 3, ""C10"": 1, ""C11"": 5}",C09,C09,C09,C10,C11,C11,C11,C11,C11
+R094,A: Openness (NEO-PI-R),B: Openness (BFI),C09,3,False,"{""C09"": 3, ""C01"": 6}",C09,C09,C09,C01,C01,C01,C01,C01,C01
+R095,A: Brand of mobile phone currently owned (categorical variable),B: Self-esteem (Rosenberg Self-Esteem Scale),C11,9,True,"{""C11"": 9}",C11,C11,C11,C11,C11,C11,C11,C11,C11
+R096,"A: Burnout (Maslach and Jackson, 1981)","B: Job stress (NIOSH, 1999 definition)",C10,0,False,"{""C02"": 2, ""C09"": 7}",C02,C02,C09,C09,C09,C09,C09,C09,C09
